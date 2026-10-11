@@ -50,6 +50,11 @@ Descarcă `index.html` și deschide-l în browser; nu are nevoie de server sau d
 
 Licența nu este încă declarată.
 
+## Istoric / Changelog
+
+Ultima actualizare: 11 octombrie 2026 (aplicația nu are număr de versiune și nu afișează date de construire).
+- Verificare de rutină: axe-core = 0 violări la 1280 și 360 px, 0 erori JS, fără depășire orizontală; proverbul zilei se calculează din data locală, deci nu necesită actualizare. Fără modificări de cod.
+
 ## Autor
 
 Alexio — Alexandru-Ionuț Chiuță, contact: alexio@trom.tf
