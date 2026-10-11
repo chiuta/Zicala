@@ -17,7 +17,7 @@ ZICALA este o aplicație offline („fără frontiere”, trade-free): fără co
 - Căutare pe cuvinte (toate cuvintele trebuie să apară), insensibilă la diacritice și la majuscule: „tacerea” găsește „Tăcerea”.
 - Filtru pe categorie și pe favorite; listă afișată progresiv (60 de rânduri, „Arată încă”).
 - Favorite (★) și proverbe proprii (adăugare/ștergere), salvate local.
-- Export al favoritelor și adăugirilor într-un fișier text.
+- Export al favoritelor și adăugirilor într-un fișier text și import al aceluiași fișier (adaugă, nu înlocuiește).
 - „Copiază” pe fiecare proverb din listă; mărimea textului A− / A+ (4 trepte, memorată local); scurtături de tastatură: `/` pentru căutare, `R` pentru „Trage la sorți” (nu se declanșează când scrii într-un câmp).
 - Tipărire: „Tipărește lista” (sau Ctrl/Cmd+P) tipărește toată lista filtrată curentă (de exemplu doar favoritele), alb-negru, fără butoane.
 - Pentru fiecare proverb, un panou „SWOT / TOWS” (interpretare editorială, vezi mai jos).
@@ -29,7 +29,7 @@ ZICALA este o aplicație offline („fără frontiere”, trade-free): fără co
 3. Scrie în „Caută” unul sau mai multe cuvinte; alege categoria sau „Favorite” din liste.
 4. Apasă „SWOT / TOWS” lângă un proverb pentru a deschide sau închide comentariul.
 5. Scrie un proverb în „Adaugă un proverb al tău” și apasă „Adaugă” (sau Enter); „Șterge” apare doar la proverbele tale.
-6. „Exportă favoritele și adăugirile” descarcă `zicala-export.txt`.
+6. „Exportă favoritele și adăugirile” descarcă `zicala-export.txt`; „Importă (fișierul exportat)” îl reîncarcă (de exemplu într-un alt browser).
 7. „Copiază” copiază un proverb; A− / A+ schimbă mărimea textului; „Tipărește lista” pregătește pagina pentru imprimantă (alege mai întâi „Favorite” pentru a tipări doar favoritele).
 
 ## Confidențialitate și rețea
@@ -55,7 +55,13 @@ Licența nu este încă declarată.
 
 ## Istoric / Changelog
 
-Ultima actualizare: 11 octombrie 2026 (aplicația nu are număr de versiune și nu afișează date de construire).
+Ultima actualizare: 11 octombrie 2026 (runda 7; aplicația nu are număr de versiune și nu afișează date de construire).
+
+Runda 7:
+- **Import:** butonul „Importă (fișierul exportat)” citește `zicala-export.txt` (secțiunile `FAVORITE` și `ADĂUGATE DE MINE`) și **adaugă** favoritele (doar pentru proverbe existente în colecție sau tocmai importate) și proverbele proprii noi; nu șterge nimic, ignoră duplicatele, respectă limitele (8–300 de caractere, fișier ≤ 200 KB) și afișează câte au fost adăugate/omise. Înainte, exportul nu putea fi reîncărcat (datele nu se puteau muta între browsere). Hash-ul CSP recalculat; axe-core = 0 violări la 1280 și 360 px.
+- Conținutul (proverbe, SWOT/TOWS) nu a fost modificat.
+
+Runda 6:
 - Nou: „Copiază” pe fiecare rând, A− / A+, scurtături `/` și `R`, „Tipărește lista” cu stil de tipărire. CSP: scriptul este acum permis prin hash în loc de `'unsafe-inline'`. Panourile SWOT/TOWS folosesc `h3` (ordine corectă a titlurilor); lista de categorii nu mai depășește ecranul de 360 px la text mărit. Captura de ecran reîmprospătată.
 - Verificare de rutină: axe-core = 0 violări la 1280 și 360 px, 0 erori JS, fără depășire orizontală; proverbul zilei se calculează din data locală, deci nu necesită actualizare. Fără modificări de cod.
 

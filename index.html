@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-HWGwGJ2sJs0MyidGXN8RncOQiV2jBDsdHitYeM6zXN4='; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-H39PHxBjJ+6B431d1IaHNER+SE2vakXoSoSJl+0u7t0='; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
 <meta name="description" content="ZICALA: 550 de proverbe și zicători românești, căutare fără diacritice, proverbul zilei, tras la sorți, favorite. Fără cont, fără urmărire, offline.">
 <meta name="color-scheme" content="light dark">
 <meta property="og:title" content="ZICALA — proverbe românești">
@@ -122,6 +122,8 @@ kbd{font:12px ui-monospace,monospace;border:1px solid var(--bd);border-bottom-wi
   </div>
   <div class="row">
     <button id="bExp">Exportă favoritele și adăugirile</button>
+    <button id="bImp" type="button">Importă (fișierul exportat)</button>
+    <input type="file" id="fImp" accept=".txt,text/plain" aria-label="Fișier zicala-export.txt de importat" style="display:none">
   </div>
   <div class="hint" id="msg" role="status" aria-live="polite" style="margin-top:8px"></div>
 </div>
@@ -801,6 +803,28 @@ $('bExp').onclick=function(){
  var txt='FAVORITE\n'+favs.join('\n')+'\n\nADĂUGATE DE MINE\n'+mine.join('\n')+'\n';
  var u=URL.createObjectURL(new Blob([txt],{type:'text/plain;charset=utf-8'}));
  var a=document.createElement('a');a.href=u;a.download='zicala-export.txt';document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(u)},1000)};
+/* import: citește fișierul produs de „Exportă” (secțiunile FAVORITE și ADĂUGATE DE MINE); nu șterge nimic, doar adaugă */
+$('bImp').onclick=function(){$('fImp').click()};
+$('fImp').onchange=function(e){
+ var f=e.target.files&&e.target.files[0];e.target.value='';if(!f)return;
+ if(f.size>200000){$('msg').textContent='Fișier prea mare pentru un export Zicala (maxim 200 KB).';return}
+ var r=new FileReader();
+ r.onerror=function(){$('msg').textContent='Fișierul nu a putut fi citit.'};
+ r.onload=function(){
+  var lines=String(r.result).replace(/^\ufeff/,'').split(/\r?\n/).map(function(x){return x.replace(/\s+/g,' ').trim()}),sec=0,fl=[],ml=[];
+  lines.forEach(function(x){if(!x)return;var u=x.toUpperCase();if(u==='FAVORITE'){sec=1;return}if(u==='ADĂUGATE DE MINE'||u==='ADAUGATE DE MINE'){sec=2;return}if(sec===1)fl.push(x);else if(sec===2)ml.push(x)});
+  if(!sec){$('msg').textContent='Format nerecunoscut: caut secțiunile „FAVORITE” și „ADĂUGATE DE MINE” din fișierul exportat de Zicala.';return}
+  var addM=0,addF=0,skip=0,byN={};
+  ml.slice(0,1000).forEach(function(t){
+   if(t.length<8||t.length>300){skip++;return}
+   var n=norm(t);if(SEEN[n])return;
+   SEEN[n]=1;mine.push(t);var o={t:t,c:MINE,n:n};ALL.push(o);bag.splice(Math.floor(Math.random()*(bag.length+1)),0,o);addM++});
+  ALL.forEach(function(p){byN[p.n]=p});
+  fl.slice(0,2000).forEach(function(t){var p=byN[norm(t)];if(!p){skip++;return}if(favs.indexOf(p.t)<0){favs.push(p.t);addF++}});
+  sv('zm',mine);sv('zf',favs);fillCats();render(true);showCur();
+  $('msg').textContent='Importat: '+addF+' favorite noi, '+addM+' proverbe proprii noi'+(skip?' ('+skip+' rânduri omise: nepotrivite sau prea scurte/lungi)':'')+'.'+(store?'':' Browserul nu permite salvarea locală: datele rămân doar în această sesiune.');
+ };
+ r.readAsText(f)};
 /* mărime text (A−/A+), memorată local; scurtături; tipărire */
 var ZS=[1,1.15,1.3,1.5],zi=0;
 try{var zv=+store.getItem('zs');if(zv>=0&&zv<ZS.length&&zv%1===0)zi=zv}catch(e){}
