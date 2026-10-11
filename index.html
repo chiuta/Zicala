@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-HWGwGJ2sJs0MyidGXN8RncOQiV2jBDsdHitYeM6zXN4='; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
 <meta name="description" content="ZICALA: 550 de proverbe și zicători românești, căutare fără diacritice, proverbul zilei, tras la sorți, favorite. Fără cont, fără urmărire, offline.">
 <meta name="color-scheme" content="light dark">
 <meta property="og:title" content="ZICALA — proverbe românești">
@@ -14,21 +14,21 @@
 :root{--bg:#faf8f3;--card:#fff;--tx:#23201a;--tx2:#6b655a;--bd:#ddd6c7;--ac:#8a3b12;--acbg:#f6e7d9}
 @media(prefers-color-scheme:dark){:root{--bg:#171512;--card:#211e19;--tx:#efe9dc;--tx2:#a39b8a;--bd:#3a352c;--ac:#e8a574;--acbg:#3a2a1d}}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 system-ui,sans-serif}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 system-ui,sans-serif;font-size:calc(16px*var(--z,1))}
 .w{max-width:760px;margin:0 auto;padding:16px}
 h1{font-size:22px;margin:8px 0 0;letter-spacing:.12em}
 .sub{color:var(--tx2);font-size:14px;margin:0 0 16px}
 .card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:20px;margin-bottom:12px}
-.big{font:22px/1.5 Georgia,serif;margin:0}
+.big{font:22px/1.5 Georgia,serif;font-size:calc(22px*var(--z,1));margin:0}
 .meta{color:var(--tx2);font-size:13px;margin-top:10px}
 .row{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
 button,select,input{font:inherit;color:var(--tx);background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:8px 12px}
 button{cursor:pointer}button:hover{border-color:var(--ac)}
 button.p{background:var(--ac);color:var(--bg);border-color:var(--ac)}
-input[type=search]{flex:1;min-width:160px}
+input[type=search]{flex:1;min-width:160px}select{min-width:0;max-width:100%}
 .item{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--bd)}
 .item:last-child{border:0}
-.item .t{flex:1;font-family:Georgia,serif}
+.item .t{flex:1;font-family:Georgia,serif;font-size:calc(16px*var(--z,1))}
 .item small{display:block;color:var(--tx2);font:12px system-ui}
 .star{border:0;background:none;font-size:20px;padding:0 4px;color:var(--tx2)}
 .star.on{color:var(--ac)}
@@ -42,7 +42,7 @@ input[type=search]{flex:1;min-width:160px}
 .q b{display:block;font-size:12px;letter-spacing:.06em;color:var(--ac);margin-bottom:2px}
 .q ul{margin:0;padding-left:16px}
 .q.t{background:var(--acbg)}
-.pn h4{margin:10px 0 2px;font-size:13px;color:var(--tx2)}
+.pn h3{margin:10px 0 2px;font-size:13px;color:var(--tx2)}
 @media(max-width:520px){.grid{grid-template-columns:1fr}}
 h2.meta{margin:0 0 6px;font-weight:600;font-size:13px}
 :focus-visible{outline:2px solid var(--ac);outline-offset:2px}
@@ -54,6 +54,21 @@ h2.meta{margin:0 0 6px;font-weight:600;font-size:13px}
 details{margin-top:8px}summary{cursor:pointer}
 .src li{margin-bottom:4px}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+.zs{display:flex;gap:6px;align-items:center;margin:0 0 12px;flex-wrap:wrap}
+.zs button{min-height:36px;min-width:44px;padding:4px 10px}
+.kb{font-size:12px;color:var(--tx2)}
+kbd{font:12px ui-monospace,monospace;border:1px solid var(--bd);border-bottom-width:2px;border-radius:4px;padding:0 5px;background:var(--card)}
+@media print{
+ :root{--bg:#fff;--card:#fff;--tx:#000;--tx2:#333;--bd:#999;--ac:#000;--acbg:#fff}
+ body{background:#fff;color:#000;font-size:12pt}
+ .w{max-width:none;padding:0}
+ .zs,.kb,noscript,#today,#todaymeta,#bTo,#todayan,.card.hint,.row,input,select,.an,.del,#more,.item .t>button,#msg,.star:not(.on){display:none!important}
+ .card{border:0;padding:0;margin:0}
+ .card:not(#lst){display:none}
+ .item{break-inside:avoid;padding:6px 0}
+ .star{border:0;font-size:12pt;min-width:0;min-height:0;order:-1}
+ h1{font-size:18pt}
+}
 </style>
 </head>
 <body>
@@ -61,6 +76,11 @@ details{margin-top:8px}summary{cursor:pointer}
 <main class="w">
 <h1>ZICALA</h1>
 <p class="sub">Proverbe și zicători românești — offline, fără urmărire, fără cont.</p>
+<div class="zs" role="group" aria-label="Mărimea textului">
+  <button id="zMinus" aria-label="Micșorează textul">A−</button>
+  <button id="zPlus" aria-label="Mărește textul">A+</button>
+  <span class="kb">Scurtături: <kbd>/</kbd> caută · <kbd>R</kbd> trage la sorți</span>
+</div>
 
 <div class="card">
   <h2 class="meta">Proverbul zilei</h2>
@@ -83,11 +103,12 @@ details{margin-top:8px}summary{cursor:pointer}
   <div id="drawan"></div>
 </div>
 
-<div class="card">
+<div class="card" id="lst">
   <div class="row" style="margin:0 0 8px">
     <input type="search" id="q" placeholder="Caută un cuvânt (merge și fără diacritice)…" aria-label="Caută în proverbe" autocomplete="off">
     <select id="cat" aria-label="Categorie"></select>
     <select id="mode" aria-label="Filtru"><option value="all">Toate</option><option value="fav">Favorite</option></select>
+    <button id="bPrint">Tipărește lista</button>
   </div>
   <div class="hint" id="count" role="status" aria-live="polite"></div>
   <div id="list"></div>
@@ -698,7 +719,7 @@ var MINE='Adăugate de mine',ALLC='Toate categoriile',PAGE=60;
 function esc(s){return String(s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
 function norm(s){return String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]+/g,' ').trim()}
 function li(a){return '<ul>'+a.map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ul>'}
-function panel(t){var a=AN[t];if(!a)return '<div class="pn"><p class="hint">Fără analiză pentru acest proverb.</p></div>';return '<div class="pn"><p>'+esc(a[0])+'</p><h4>SWOT</h4><div class="grid"><div class="q"><b>PUNCTE TARI</b>'+li(a[1])+'</div><div class="q"><b>PUNCTE SLABE</b>'+li(a[2])+'</div><div class="q"><b>OPORTUNITĂȚI</b>'+li(a[3])+'</div><div class="q"><b>AMENINȚĂRI</b>'+li(a[4])+'</div></div><h4>TOWS</h4><div class="grid"><div class="q t"><b>SO · puncte tari + oportunități</b>'+esc(a[5])+'</div><div class="q t"><b>WO · puncte slabe + oportunități</b>'+esc(a[6])+'</div><div class="q t"><b>ST · puncte tari + amenințări</b>'+esc(a[7])+'</div><div class="q t"><b>WT · puncte slabe + amenințări</b>'+esc(a[8])+'</div></div><p class="hint ed">Interpretare editorială, generată asistat de AI — nu este o sursă paremiologică; sensul și originea pot fi inexacte.</p></div>'}
+function panel(t){var a=AN[t];if(!a)return '<div class="pn"><p class="hint">Fără analiză pentru acest proverb.</p></div>';return '<div class="pn"><p>'+esc(a[0])+'</p><h3>SWOT</h3><div class="grid"><div class="q"><b>PUNCTE TARI</b>'+li(a[1])+'</div><div class="q"><b>PUNCTE SLABE</b>'+li(a[2])+'</div><div class="q"><b>OPORTUNITĂȚI</b>'+li(a[3])+'</div><div class="q"><b>AMENINȚĂRI</b>'+li(a[4])+'</div></div><h3>TOWS</h3><div class="grid"><div class="q t"><b>SO · puncte tari + oportunități</b>'+esc(a[5])+'</div><div class="q t"><b>WO · puncte slabe + oportunități</b>'+esc(a[6])+'</div><div class="q t"><b>ST · puncte tari + amenințări</b>'+esc(a[7])+'</div><div class="q t"><b>WT · puncte slabe + amenințări</b>'+esc(a[8])+'</div></div><p class="hint ed">Interpretare editorială, generată asistat de AI — nu este o sursă paremiologică; sensul și originea pot fi inexacte.</p></div>'}
 var $=function(i){return document.getElementById(i)};
 var store=(function(){try{localStorage.setItem('z','1');return localStorage}catch(e){return null}})();
 function ld(k){try{var v=JSON.parse(store.getItem(k));return Array.isArray(v)?v.filter(function(x){return typeof x==='string'&&x.length>0&&x.length<=300}):[]}catch(e){return[]}}
@@ -728,12 +749,13 @@ function togglePanel(btn,box,t){var open=!!box.innerHTML;box.innerHTML=open?'':p
 $('bDraw').onclick=function(){$('drawan').innerHTML='';$('bAn').setAttribute('aria-expanded','false');if(!bag.length)refill();cur=bag.pop();showCur()};
 $('bAn').onclick=function(){if(cur)togglePanel($('bAn'),$('drawan'),cur.t)};
 $('bTo').onclick=function(){togglePanel($('bTo'),$('todayan'),$('today').textContent)};
-$('bCopy').onclick=function(){if(!cur)return;var t=cur.t,b=$('bCopy');function ok(){b.textContent='Copiat';setTimeout(function(){b.textContent='Copiază'},1500)}function ko(){$('msg').textContent='Nu am putut copia automat; selectează textul manual.'}
- try{if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(t).then(ok,ko);else ko()}catch(e){ko()}};
+function copyTxt(t,ok){function ko(){$('msg').textContent='Nu am putut copia automat; selectează textul manual.'}
+ try{if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(t).then(ok,ko);else ko()}catch(e){ko()}}
+$('bCopy').onclick=function(){if(!cur)return;var b=$('bCopy');copyTxt(cur.t,function(){b.textContent='Copiat';setTimeout(function(){b.textContent='Copiază'},1500)})};
 $('bFav').onclick=function(){if(!cur)return;toggle(cur.t);showCur();render()};
 function toggle(t){var i=favs.indexOf(t);if(i>=0)favs.splice(i,1);else favs.push(t);sv('zf',favs)}
 var view=[],shown=PAGE;
-function row(p,i){var on=isFav(p.t);return '<div class="item"><div class="t">'+esc(p.t)+'<small>'+esc(p.c)+'</small><button class="an" data-a="'+i+'" aria-expanded="false">SWOT / TOWS</button>'+(p.c===MINE?'<button class="del" data-del="'+i+'">Șterge</button>':'')+'<div class="anp"></div></div><button class="star'+(on?' on':'')+'" data-s="'+i+'" aria-pressed="'+on+'" aria-label="Favorit: '+esc(p.t)+'">'+(on?'★':'☆')+'</button></div>'}
+function row(p,i){var on=isFav(p.t);return '<div class="item"><div class="t">'+esc(p.t)+'<small>'+esc(p.c)+'</small><button class="an" data-a="'+i+'" aria-expanded="false">SWOT / TOWS</button><button class="an" data-cp="'+i+'" style="margin-left:6px">Copiază</button>'+(p.c===MINE?'<button class="del" data-del="'+i+'">Șterge</button>':'')+'<div class="anp"></div></div><button class="star'+(on?' on':'')+'" data-s="'+i+'" aria-pressed="'+on+'" aria-label="Favorit: '+esc(p.t)+'">'+(on?'★':'☆')+'</button></div>'}
 function render(keep){
  var toks=norm($('q').value).split(' ').filter(Boolean),c=$('cat').value,m=$('mode').value;
  view=ALL.filter(function(p){
@@ -750,7 +772,8 @@ function render(keep){
 }
 $('list').onclick=function(e){
  var t=e.target;if(!t.closest)return;
- var a=t.closest('.an');if(a){var p=view[+a.getAttribute('data-a')];if(p)togglePanel(a,a.parentNode.querySelector('.anp'),p.t);return}
+ var cp=t.closest('[data-cp]');if(cp){var pc=view[+cp.getAttribute('data-cp')];if(pc)copyTxt(pc.t,function(){cp.textContent='Copiat';setTimeout(function(){cp.textContent='Copiază'},1500)});return}
+ var a=t.closest('.an[data-a]');if(a){var p=view[+a.getAttribute('data-a')];if(p)togglePanel(a,a.parentNode.querySelector('.anp'),p.t);return}
  if(t.closest('#more')){var y=window.scrollY;shown+=PAGE;render(true);window.scrollTo(0,y);return}
  var d=t.closest('.del');if(d){var q=view[+d.getAttribute('data-del')];if(q)removeMine(q);return}
  var b=t.closest('.star');if(!b)return;var s=view[+b.getAttribute('data-s')];if(!s)return;toggle(s.t);var y2=window.scrollY;render(true);window.scrollTo(0,y2);showCur()};
@@ -778,6 +801,22 @@ $('bExp').onclick=function(){
  var txt='FAVORITE\n'+favs.join('\n')+'\n\nADĂUGATE DE MINE\n'+mine.join('\n')+'\n';
  var u=URL.createObjectURL(new Blob([txt],{type:'text/plain;charset=utf-8'}));
  var a=document.createElement('a');a.href=u;a.download='zicala-export.txt';document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(u)},1000)};
+/* mărime text (A−/A+), memorată local; scurtături; tipărire */
+var ZS=[1,1.15,1.3,1.5],zi=0;
+try{var zv=+store.getItem('zs');if(zv>=0&&zv<ZS.length&&zv%1===0)zi=zv}catch(e){}
+function setZ(){document.documentElement.style.setProperty('--z',ZS[zi]);$('zMinus').disabled=zi===0;$('zPlus').disabled=zi===ZS.length-1;try{store.setItem('zs',zi)}catch(e){}}
+$('zMinus').onclick=function(){if(zi>0){zi--;setZ()}};
+$('zPlus').onclick=function(){if(zi<ZS.length-1){zi++;setZ()}};
+setZ();
+document.addEventListener('keydown',function(e){
+ if(e.ctrlKey||e.metaKey||e.altKey)return;
+ var t=e.target,tg=t&&t.tagName;if(tg==='INPUT'||tg==='SELECT'||tg==='TEXTAREA'||(t&&t.isContentEditable))return;
+ if(e.key==='/'){e.preventDefault();$('q').focus();$('q').select()}
+ else if((e.key==='r'||e.key==='R')&&tg!=='BUTTON'){e.preventDefault();$('bDraw').click()}});
+var prevShown=null;
+window.addEventListener('beforeprint',function(){if(prevShown===null){prevShown=shown;shown=1e9;render(true)}});
+window.addEventListener('afterprint',function(){if(prevShown!==null){shown=prevShown;prevShown=null;render(true)}});
+$('bPrint').onclick=function(){window.print()};
 render();
 </script>
 </body>
