@@ -1,5 +1,7 @@
 # ZICALA — proverbe românești
 
+**Versiune:** 1.0.0 · **Ultima actualizare:** 12 octombrie 2026
+
 Colecție de 550 de proverbe și zicători românești într-un singur fișier HTML: proverbul zilei, tras la sorți, căutare, favorite și comentarii SWOT / TOWS.
 
 **Live:** https://chiuta.github.io/Zicala/
@@ -55,7 +57,7 @@ Licența nu este încă declarată.
 
 ## Istoric / Changelog
 
-Ultima actualizare: 11 octombrie 2026 (runda 7; aplicația nu are număr de versiune și nu afișează date de construire).
+- 1.0.0 — 2026-10-12: versiunea și data ultimei actualizări sunt afișate în aplicație (prima versiune numerotată; în cardul informativ de sub listă).
 
 Runda 7:
 - **Import:** butonul „Importă (fișierul exportat)” citește `zicala-export.txt` (secțiunile `FAVORITE` și `ADĂUGATE DE MINE`) și **adaugă** favoritele (doar pentru proverbe existente în colecție sau tocmai importate) și proverbele proprii noi; nu șterge nimic, ignoră duplicatele, respectă limitele (8–300 de caractere, fișier ≤ 200 KB) și afișează câte au fost adăugate/omise. Înainte, exportul nu putea fi reîncărcat (datele nu se puteau muta între browsere). Hash-ul CSP recalculat; axe-core = 0 violări la 1280 și 360 px.
