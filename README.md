@@ -1,6 +1,6 @@
 # ZICALA — proverbe românești
 
-**Versiune:** 1.0.0 · **Ultima actualizare:** 12 octombrie 2026
+**Versiune:** 1.1.0 · **Ultima actualizare:** 14 octombrie 2026
 
 Colecție de 550 de proverbe și zicători românești într-un singur fișier HTML: proverbul zilei, tras la sorți, căutare, favorite și comentarii SWOT / TOWS.
 
@@ -56,6 +56,8 @@ Descarcă `index.html` și deschide-l în browser; nu are nevoie de server sau d
 Licența nu este încă declarată.
 
 ## Istoric / Changelog
+
+- 1.1.0 — 2026-10-14: Copie de rezervă și etichetare date (fff-kit).
 
 - 1.0.0 — 2026-10-12: versiunea și data ultimei actualizări sunt afișate în aplicație (prima versiune numerotată; în cardul informativ de sub listă).
 

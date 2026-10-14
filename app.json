@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "slug": "zicala",
+  "name": "ZICALA — proverbe românești",
+  "version": "1.1.0",
+  "updated": "2026-10-14",
+  "description": "ZICALA: 550 de proverbe și zicători românești, căutare fără diacritice, proverbul zilei, tras la sorți, favorite. Fără cont, fără urmărire, offline.",
+  "egress": [],
+  "permissions": [
+    "clipboard",
+    "serviceWorker",
+    "localStorage"
+  ],
+  "storageKeys": [
+    "z",
+    "zs"
+  ],
+  "sizeBytes": 729224,
+  "sha256": "d53f7a748e6e0ec011a81a68ca04f20517a178dff305ced70570242577f26ad7",
+  "csp": {
+    "present": true,
+    "directives": {
+      "default-src": "'none'",
+      "script-src": "sha256×3",
+      "style-src": "'unsafe-inline'",
+      "img-src": "'self' data:",
+      "base-uri": "'none'",
+      "form-action": "'none'",
+      "manifest-src": "'self'",
+      "worker-src": "'self'"
+    },
+    "scriptInline": "hash",
+    "connect": "'none'"
+  },
+  "features": {
+    "export": true,
+    "import": true,
+    "i18n": [],
+    "pwa": {
+      "manifest": true,
+      "serviceWorker": true
+    },
+    "modules": [
+      "core",
+      "label",
+      "bundle"
+    ]
+  },
+  "kit": {
+    "version": "1.0.0",
+    "modules": [
+      "core",
+      "label",
+      "bundle"
+    ]
+  },
+  "selfSerializing": false
+}
