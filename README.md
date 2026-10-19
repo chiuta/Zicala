@@ -1,78 +1,80 @@
-# ZICALA — proverbe românești
+# ZICALA — Romanian proverbs
 
-**Versiune:** 1.1.0 · **Ultima actualizare:** 14 octombrie 2026
+**English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-Colecție de 550 de proverbe și zicători românești într-un singur fișier HTML: proverbul zilei, tras la sorți, căutare, favorite și comentarii SWOT / TOWS.
+**Version:** 1.1.0 · **Last updated:** 2026-10-14
+
+A collection of 550 Romanian proverbs and sayings in a single HTML file: proverb of the day, random draw, search, favourites and SWOT / TOWS commentaries.
 
 **Live:** https://chiuta.github.io/Zicala/
 
-![Captura de ecran](screenshot.png)
+![Screenshot](screenshot.png)
 
-## Ce este
+## What it is
 
-ZICALA este o aplicație offline („fără frontiere”, trade-free): fără cont, fără urmărire, fără apeluri de rețea. Proverbele sunt grupate în 13 categorii (11 tematice, „Din culegerea Hințescu (selecție)” și „Alte culegeri online (selecție)”).
+ZICALA is an offline ("without borders", trade-free) application: no account, no tracking, no network calls. The proverbs are grouped into 13 categories (11 thematic ones, "From the Hințescu collection (selection)" and "Other online collections (selection)").
 
-## Funcții
+## Features
 
-- Proverbul zilei: ales determinist după data locală; într-un ciclu de 550 de zile nu se repetă niciunul.
-- „Trage la sorți”: parcurge toate proverbele în ordine aleatorie (amestecare Fisher–Yates), fără repetări până se termină tururile; buton „Copiază”.
-- Căutare pe cuvinte (toate cuvintele trebuie să apară), insensibilă la diacritice și la majuscule: „tacerea” găsește „Tăcerea”.
-- Filtru pe categorie și pe favorite; listă afișată progresiv (60 de rânduri, „Arată încă”).
-- Favorite (★) și proverbe proprii (adăugare/ștergere), salvate local.
-- Export al favoritelor și adăugirilor într-un fișier text și import al aceluiași fișier (adaugă, nu înlocuiește).
-- „Copiază” pe fiecare proverb din listă; mărimea textului A− / A+ (4 trepte, memorată local); scurtături de tastatură: `/` pentru căutare, `R` pentru „Trage la sorți” (nu se declanșează când scrii într-un câmp).
-- Tipărire: „Tipărește lista” (sau Ctrl/Cmd+P) tipărește toată lista filtrată curentă (de exemplu doar favoritele), alb-negru, fără butoane.
-- Pentru fiecare proverb, un panou „SWOT / TOWS” (interpretare editorială, vezi mai jos).
+- Proverb of the day: chosen deterministically from the local date; within a cycle of 550 days none is repeated.
+- "Draw at random": goes through all the proverbs in random order (Fisher–Yates shuffle), with no repeats until the rounds are finished; "Copy" button.
+- Word search (all words must appear), insensitive to diacritics and letter case: "tacerea" finds "Tăcerea".
+- Filter by category and by favourites; list displayed progressively (60 rows, "Show more").
+- Favourites (★) and your own proverbs (add/delete), saved locally.
+- Export of favourites and additions to a text file and import of the same file (adds, does not replace).
+- "Copy" on every proverb in the list; text size A− / A+ (4 steps, remembered locally); keyboard shortcuts: `/` for search, `R` for "Draw at random" (not triggered while you are typing in a field).
+- Printing: "Print list" (or Ctrl/Cmd+P) prints the whole currently filtered list (for example only the favourites), in black and white, without buttons.
+- For each proverb, a "SWOT / TOWS" panel (editorial interpretation, see below).
 
-## Manual de utilizare
+## User guide
 
-1. Deschide pagina; „Proverbul zilei” apare sus.
-2. Apasă „Trage la sorți” pentru un proverb aleatoriu; „Favorit” îl salvează.
-3. Scrie în „Caută” unul sau mai multe cuvinte; alege categoria sau „Favorite” din liste.
-4. Apasă „SWOT / TOWS” lângă un proverb pentru a deschide sau închide comentariul.
-5. Scrie un proverb în „Adaugă un proverb al tău” și apasă „Adaugă” (sau Enter); „Șterge” apare doar la proverbele tale.
-6. „Exportă favoritele și adăugirile” descarcă `zicala-export.txt`; „Importă (fișierul exportat)” îl reîncarcă (de exemplu într-un alt browser).
-7. „Copiază” copiază un proverb; A− / A+ schimbă mărimea textului; „Tipărește lista” pregătește pagina pentru imprimantă (alege mai întâi „Favorite” pentru a tipări doar favoritele).
+1. Open the page; the "Proverb of the day" appears at the top.
+2. Press "Draw at random" for a random proverb; "Favourite" saves it.
+3. Type one or more words in "Search"; choose the category or "Favourites" from the lists.
+4. Press "SWOT / TOWS" next to a proverb to open or close the commentary.
+5. Type a proverb in "Add a proverb of your own" and press "Add" (or Enter); "Delete" appears only on your own proverbs.
+6. "Export favourites and additions" downloads `zicala-export.txt`; "Import (the exported file)" reloads it (for example in another browser).
+7. "Copy" copies a proverb; A− / A+ changes the text size; "Print list" prepares the page for the printer (first choose "Favourites" to print only the favourites).
 
-## Confidențialitate și rețea
+## Privacy and network
 
-- Storage: `localStorage` (cheile `zf` pentru favorite, `zm` pentru proverbele adăugate, `zs` pentru mărimea textului), dacă browserul îl permite; altfel aplicația funcționează, dar nu păstrează datele și te avertizează. Nu se folosesc cookie-uri, `sessionStorage` sau IndexedDB.
-- Rețea: niciun apel extern. Pagina are o politică CSP (`default-src 'none'`, scripturi doar pe bază de hash, fără `'unsafe-inline'` pentru script) care blochează orice conexiune sau resursă externă. Numele site-urilor din secțiunea „Surse” sunt doar text, nu linkuri.
-- Permisiuni ale browserului: niciuna.
+- Storage: `localStorage` (keys `zf` for favourites, `zm` for added proverbs, `zs` for text size), if the browser allows it; otherwise the app works but does not keep the data and warns you. No cookies, `sessionStorage` or IndexedDB are used.
+- Network: no external calls. The page has a CSP policy (`default-src 'none'`, scripts only by hash, no `'unsafe-inline'` for scripts) that blocks any external connection or resource. The names of the sites in the "Sources" section are plain text, not links.
+- Browser permissions: none.
 
-## Limite și avertismente
+## Limits and warnings
 
-- **SWOT / TOWS sunt interpretări editoriale**, generate asistat de AI, ca exercițiu de reflecție. Nu sunt surse paremiologice sau istorice; sensul, originea („biblică”, „latină”) și atribuirile pot fi inexacte. Nu înlocuiesc sfatul medical, juridic sau financiar.
-- Colecția nu este exhaustivă. Pentru categoria „Alte culegeri online” sursa exactă a fiecărui proverb nu este înregistrată (surse generale: ppli.ie, digitalpedia.ro, Enciclopedia comunei Șerbănești, proverbesicitate.blogspot.com, adevarul.ro). Categoria „Hințescu” provine din I. C. Hințescu, *Proverbele românilor* (via ro.wikisource.org, ortografie actualizată).
-- Proverbele populare sunt anonime, din tradiția orală; comentariile și aranjările unor culegeri moderne pot fi protejate. Pentru corecții sau retrageri: alexio@trom.tf.
-- Unele proverbe vechi conțin stereotipuri sau limbaj depășit; sunt păstrate ca documente de limbă, nu ca îndemnuri.
+- **SWOT / TOWS are editorial interpretations**, generated with AI assistance, as an exercise in reflection. They are not paremiological or historical sources; the meaning, the origin ("biblical", "Latin") and the attributions may be inaccurate. They do not replace medical, legal or financial advice.
+- The collection is not exhaustive. For the "Other online collections" category the exact source of each proverb is not recorded (general sources: ppli.ie, digitalpedia.ro, Enciclopedia comunei Șerbănești, proverbesicitate.blogspot.com, adevarul.ro). The "Hințescu" category comes from I. C. Hințescu, *Proverbele românilor* (via ro.wikisource.org, updated spelling).
+- Folk proverbs are anonymous, from the oral tradition; the commentaries and arrangements of some modern collections may be protected. For corrections or withdrawals: alexio@trom.tf.
+- Some old proverbs contain stereotypes or outdated language; they are kept as documents of the language, not as exhortations.
 
-## Rulare locală / offline
+## Running locally / offline
 
-Descarcă `index.html` și deschide-l în browser; nu are nevoie de server sau de internet.
+Download `index.html` and open it in a browser; it needs no server or internet.
 
-## Licență
+## License
 
-Licența nu este încă declarată.
+The license has not been declared yet.
 
-## Istoric / Changelog
+## History / Changelog
 
-- 1.1.0 — 2026-10-14: Copie de rezervă și etichetare date (fff-kit).
+- 1.1.0 — 2026-10-14: Backup and data labelling (fff-kit).
 
-- 1.0.0 — 2026-10-12: versiunea și data ultimei actualizări sunt afișate în aplicație (prima versiune numerotată; în cardul informativ de sub listă).
+- 1.0.0 — 2026-10-12: the version and the date of the last update are shown in the app (first numbered version; in the info card below the list).
 
-Runda 7:
-- **Import:** butonul „Importă (fișierul exportat)” citește `zicala-export.txt` (secțiunile `FAVORITE` și `ADĂUGATE DE MINE`) și **adaugă** favoritele (doar pentru proverbe existente în colecție sau tocmai importate) și proverbele proprii noi; nu șterge nimic, ignoră duplicatele, respectă limitele (8–300 de caractere, fișier ≤ 200 KB) și afișează câte au fost adăugate/omise. Înainte, exportul nu putea fi reîncărcat (datele nu se puteau muta între browsere). Hash-ul CSP recalculat; axe-core = 0 violări la 1280 și 360 px.
-- Conținutul (proverbe, SWOT/TOWS) nu a fost modificat.
+Round 7:
+- **Import:** the "Import (the exported file)" button reads `zicala-export.txt` (the `FAVORITE` and `ADĂUGATE DE MINE` sections) and **adds** the favourites (only for proverbs existing in the collection or just imported) and the new proverbs of your own; it deletes nothing, ignores duplicates, respects the limits (8–300 characters, file ≤ 200 KB) and shows how many were added/skipped. Previously, the export could not be reloaded (data could not be moved between browsers). CSP hash recalculated; axe-core = 0 violations at 1280 and 360 px.
+- The content (proverbs, SWOT/TOWS) was not modified.
 
-Runda 6:
-- Nou: „Copiază” pe fiecare rând, A− / A+, scurtături `/` și `R`, „Tipărește lista” cu stil de tipărire. CSP: scriptul este acum permis prin hash în loc de `'unsafe-inline'`. Panourile SWOT/TOWS folosesc `h3` (ordine corectă a titlurilor); lista de categorii nu mai depășește ecranul de 360 px la text mărit. Captura de ecran reîmprospătată.
-- Verificare de rutină: axe-core = 0 violări la 1280 și 360 px, 0 erori JS, fără depășire orizontală; proverbul zilei se calculează din data locală, deci nu necesită actualizare. Fără modificări de cod.
+Round 6:
+- New: "Copy" on every row, A− / A+, shortcuts `/` and `R`, "Print list" with print styling. CSP: the script is now allowed by hash instead of `'unsafe-inline'`. The SWOT/TOWS panels use `h3` (correct heading order); the category list no longer overflows the 360 px screen with enlarged text. Screenshot refreshed.
+- Routine check: axe-core = 0 violations at 1280 and 360 px, 0 JS errors, no horizontal overflow; the proverb of the day is computed from the local date, so it needs no updating. No code changes.
 
-## Autor
+## Author
 
 Alexio — Alexandru-Ionuț Chiuță, contact: alexio@trom.tf
 
-## English summary
+## Summary
 
 ZICALA is a single-file, offline collection of 550 Romanian proverbs: daily proverb, random draw (Fisher–Yates), diacritic-insensitive search, favorites and user-added proverbs (localStorage, with graceful fallback). It makes no network requests (strict CSP) and requests no permissions. The per-proverb SWOT/TOWS panels are editorial, AI-assisted interpretations, not scholarly sources. Source attribution is general; per-item provenance is not recorded. No license declared yet.
