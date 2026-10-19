@@ -15,8 +15,8 @@
     "z",
     "zs"
   ],
-  "sizeBytes": 730833,
-  "sha256": "6e76b3d380549cd373ff63fe57f09ce2e5933c1d6455dd76e020136bd7fb200b",
+  "sizeBytes": 731469,
+  "sha256": "d82a4bd53fd2d49f4a8ac0154ed03df51430e64cd355de453ceee789a26ad36e",
   "csp": {
     "present": true,
     "directives": {
@@ -47,7 +47,7 @@
     ]
   },
   "kit": {
-    "version": "1.0.0",
+    "version": "1.1.1",
     "modules": [
       "core",
       "label",
