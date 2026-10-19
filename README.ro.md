@@ -10,7 +10,7 @@ Colecție de 550 de proverbe și zicători românești într-un singur fișier H
 
 **Live:** https://chiuta.github.io/Zicala/
 
-![Captura de ecran](screenshot.png)
+![Captura de ecran](screenshot.ro.png)
 
 ## Ce este
 

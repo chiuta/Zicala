@@ -10,7 +10,7 @@ Una colección de 550 proverbios y dichos rumanos en un único archivo HTML: pro
 
 **En línea:** https://chiuta.github.io/Zicala/
 
-![Captura de pantalla](screenshot.png)
+![Captura de pantalla](screenshot.es.png)
 
 ## Qué es
 

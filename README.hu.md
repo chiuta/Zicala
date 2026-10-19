@@ -10,7 +10,7 @@ A felület nyelvei: **Română, English, Français, Italiano, Español, Portugu�
 
 **Élő változat:** https://chiuta.github.io/Zicala/
 
-![Képernyőkép](screenshot.png)
+![Képernyőkép](screenshot.hu.png)
 
 ## Mi ez
 

@@ -10,7 +10,7 @@ Uma coleção de 550 provérbios e ditados romenos num único ficheiro HTML: pro
 
 **Online:** https://chiuta.github.io/Zicala/
 
-![Captura de ecrã](screenshot.png)
+![Captura de ecrã](screenshot.pt.png)
 
 ## O que é
 

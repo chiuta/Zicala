@@ -10,7 +10,7 @@ Une collection de 550 proverbes et dictons roumains dans un seul fichier HTML : 
 
 **En ligne :** https://chiuta.github.io/Zicala/
 
-![Capture d'écran](screenshot.png)
+![Capture d'écran](screenshot.fr.png)
 
 ## De quoi s'agit-il
 

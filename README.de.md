@@ -10,7 +10,7 @@ Eine Sammlung von 550 rumänischen Sprichwörtern und Redensarten in einer einzi
 
 **Online:** https://chiuta.github.io/Zicala/
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshot.de.png)
 
 ## Was es ist
 

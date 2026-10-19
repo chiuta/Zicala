@@ -10,7 +10,7 @@ A collection of 550 Romanian proverbs and sayings in a single HTML file: proverb
 
 **Live:** https://chiuta.github.io/Zicala/
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshot.en.png)
 
 ## What it is
 

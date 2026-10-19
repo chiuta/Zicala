@@ -10,7 +10,7 @@ Una raccolta di 550 proverbi e detti rumeni in un unico file HTML: proverbio del
 
 **Online:** https://chiuta.github.io/Zicala/
 
-![Schermata](screenshot.png)
+![Schermata](screenshot.it.png)
 
 ## Che cos'è
 
