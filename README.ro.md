@@ -77,6 +77,6 @@ Runda 6:
 
 Alexio — Alexandru-Ionuț Chiuță, contact: alexio@trom.tf
 
-## English summary
+## Rezumat
 
-ZICALA is a single-file, offline collection of 550 Romanian proverbs: daily proverb, random draw (Fisher–Yates), diacritic-insensitive search, favorites and user-added proverbs (localStorage, with graceful fallback). It makes no network requests (strict CSP) and requests no permissions. The per-proverb SWOT/TOWS panels are editorial, AI-assisted interpretations, not scholarly sources. Source attribution is general; per-item provenance is not recorded. No license declared yet.
+ZICALA este o colecție offline, într-un singur fișier, de 550 de proverbe românești: proverbul zilei, extragere aleatorie (Fisher–Yates), căutare insensibilă la diacritice, favorite și proverbe adăugate de utilizator (localStorage, cu rezervă elegantă). Nu face cereri de rețea (CSP strict) și nu cere permisiuni. Panourile SWOT/TOWS pentru fiecare proverb sunt interpretări editoriale, asistate de AI, nu surse academice. Atribuirea surselor este generală; proveniența fiecărui element nu este înregistrată. Nicio licență declarată încă.
