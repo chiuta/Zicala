@@ -46,6 +46,7 @@ ZICALA ist eine Offline-Anwendung („ohne Grenzen", trade-free): ohne Konto, oh
 
 ## Grenzen und Hinweise
 
+- Die Sprichwörter selbst stehen im rumänischen Original. Die SWOT-/TOWS-Kommentare liegen in allen 8 Sprachen vor (alle 549 Analysen sind übersetzt); die Übersetzungen sind automatisch, **nicht von Muttersprachlern geprüft**, und Kommentare zu Geld, Gesundheit, Kindersicherheit oder Alkohol (und einige zu Tod oder Trauer) **müssen fachlich geprüft werden**; die App fügt keine Ratschläge hinzu.
 - **SWOT / TOWS sind redaktionelle Deutungen**, KI-gestützt erzeugt, als Übung zum Nachdenken. Sie sind keine parömiologischen oder historischen Quellen; Bedeutung, Herkunft („biblisch", „lateinisch") und Zuschreibungen können ungenau sein. Sie ersetzen keinen ärztlichen, rechtlichen oder finanziellen Rat.
 - Die Sammlung ist nicht erschöpfend. Für die Kategorie „Andere Online-Sammlungen" ist die genaue Quelle jedes Sprichworts nicht erfasst (allgemeine Quellen: ppli.ie, digitalpedia.ro, Enciclopedia comunei Șerbănești, proverbesicitate.blogspot.com, adevarul.ro). Die Kategorie „Hințescu" stammt aus I. C. Hințescu, *Proverbele românilor* (über ro.wikisource.org, aktualisierte Rechtschreibung).
 - Volkssprichwörter sind anonym, aus der mündlichen Überlieferung; die Kommentare und Anordnungen einiger moderner Sammlungen können geschützt sein. Für Korrekturen oder Entfernungen: alexio@trom.tf.
@@ -60,6 +61,8 @@ Lade `index.html` herunter und öffne sie im Browser; sie benötigt weder Server
 Die Lizenz ist noch nicht festgelegt.
 
 ## Verlauf / Changelog
+
+- 1.2.2 — 2026-10-19: alle 549 SWOT-/TOWS-Analysen sind nach en, fr, it, es, pt, de, hu übersetzt; die Hinweise sagen nicht mehr, dass der Rest auf Rumänisch bleibt. Die Sprichwörter bleiben auf Rumänisch.
 
 - 1.1.0 — 2026-10-14: Datensicherung und Datenkennzeichnung (fff-kit).
 

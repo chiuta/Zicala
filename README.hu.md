@@ -46,6 +46,7 @@ A ZICALA offline („határok nélküli", trade-free) alkalmazás: fiókot nem k
 
 ## Korlátok és figyelmeztetések
 
+- Maguk a közmondások az eredeti román nyelven szerepelnek. A SWOT / TOWS-kommentárok mind a 8 nyelven elérhetők (mind az 549 elemzés le van fordítva); a fordítások automatikusak, **anyanyelvi beszélők nem ellenőrizték**, a pénzzel, egészséggel, gyermekbiztonsággal vagy alkohollal kapcsolatos (és néhány halálról vagy gyászról szóló) kommentár pedig **szakmai felülvizsgálatot igényel**; az alkalmazás nem ad tanácsot.
 - **A SWOT / TOWS szerkesztői értelmezések**, mesterséges intelligencia segítségével készültek, gondolkodtató gyakorlatként. Nem paremiológiai vagy történeti források; a jelentés, az eredet („bibliai", „latin") és az attribúciók pontatlanok lehetnek. Nem helyettesítik az orvosi, jogi vagy pénzügyi tanácsot.
 - A gyűjtemény nem teljes körű. A „Más online gyűjtemények” kategóriánál az egyes közmondások pontos forrása nincs rögzítve (általános források: ppli.ie, digitalpedia.ro, Enciclopedia comunei Șerbănești, proverbesicitate.blogspot.com, adevarul.ro). A „Hințescu” kategória I. C. Hințescu *Proverbele românilor* című művéből származik (a ro.wikisource.org útján, frissített helyesírással).
 - A népi közmondások névtelenek, szájhagyományból erednek; néhány modern gyűjtemény kommentárjai és elrendezései védettek lehetnek. Javításokhoz vagy eltávolításhoz: alexio@trom.tf.
@@ -60,6 +61,8 @@ Töltsd le az `index.html` fájlt, és nyisd meg böngészőben; nincs szükség
 A licenc még nincs megadva.
 
 ## Előzmények / Changelog
+
+- 1.2.2 — 2026-10-19: mind az 549 SWOT / TOWS-elemzés le van fordítva en, fr, it, es, pt, de, hu nyelvre; a megjegyzések már nem állítják, hogy a többi románul marad. A közmondások románul maradnak.
 
 - 1.1.0 — 2026-10-14: biztonsági mentés és adatcímkézés (fff-kit).
 

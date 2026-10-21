@@ -46,6 +46,7 @@ A ZICALA é uma aplicação offline («sem fronteiras», trade-free): sem conta,
 
 ## Limites e avisos
 
+- Os provérbios em si são apresentados em romeno, o idioma original. Os comentários SWOT / TOWS existem nos 8 idiomas (todas as 549 análises estão traduzidas); as traduções são automáticas, **não verificadas por falantes nativos**, e os comentários que tocam em dinheiro, saúde, segurança das crianças ou álcool (e alguns sobre a morte ou o luto) **precisam de revisão especializada**; a aplicação não acrescenta nenhum conselho.
 - **Os SWOT / TOWS são interpretações editoriais**, geradas com assistência de IA, como exercício de reflexão. Não são fontes paremiológicas nem históricas; o sentido, a origem («bíblica», «latina») e as atribuições podem ser inexatos. Não substituem aconselhamento médico, jurídico ou financeiro.
 - A coleção não é exaustiva. Para a categoria «Outras coletâneas online» não está registada a fonte exata de cada provérbio (fontes gerais: ppli.ie, digitalpedia.ro, Enciclopedia comunei Șerbănești, proverbesicitate.blogspot.com, adevarul.ro). A categoria «Hințescu» provém de I. C. Hințescu, *Proverbele românilor* (através de ro.wikisource.org, ortografia atualizada).
 - Os provérbios populares são anónimos, de tradição oral; os comentários e as organizações de algumas coletâneas modernas podem estar protegidos. Para correções ou retiradas: alexio@trom.tf.
@@ -60,6 +61,8 @@ Descarregue `index.html` e abra-o no navegador; não precisa de servidor nem de 
 A licença ainda não está declarada.
 
 ## Histórico / Changelog
+
+- 1.2.2 — 2026-10-19: as 549 análises SWOT / TOWS estão traduzidas para en, fr, it, es, pt, de, hu; as notas já não dizem que o resto fica em romeno. Os provérbios continuam em romeno.
 
 - 1.1.0 — 2026-10-14: cópia de segurança e etiquetagem de dados (fff-kit).
 

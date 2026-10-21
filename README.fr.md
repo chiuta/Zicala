@@ -46,6 +46,7 @@ ZICALA est une application hors ligne (« sans frontières », trade-free) : san
 
 ## Limites et avertissements
 
+- Les proverbes eux-mêmes sont donnés en roumain, la langue d'origine. Les commentaires SWOT / TOWS existent dans les 8 langues (les 549 analyses sont traduites) ; les traductions sont automatiques, **non vérifiées par des locuteurs natifs**, et les commentaires touchant à l'argent, à la santé, à la sécurité des enfants ou à l'alcool (et quelques-uns sur la mort ou le deuil) **doivent être relus par un spécialiste** ; l'application n'ajoute aucun conseil.
 - **Les SWOT / TOWS sont des interprétations éditoriales**, générées avec l'aide de l'IA, comme exercice de réflexion. Ce ne sont pas des sources parémiologiques ou historiques ; le sens, l'origine (« biblique », « latine ») et les attributions peuvent être inexacts. Ils ne remplacent pas un avis médical, juridique ou financier.
 - La collection n'est pas exhaustive. Pour la catégorie « Autres recueils en ligne », la source exacte de chaque proverbe n'est pas enregistrée (sources générales : ppli.ie, digitalpedia.ro, Enciclopedia comunei Șerbănești, proverbesicitate.blogspot.com, adevarul.ro). La catégorie « Hințescu » provient de I. C. Hințescu, *Proverbele românilor* (via ro.wikisource.org, orthographe actualisée).
 - Les proverbes populaires sont anonymes, issus de la tradition orale ; les commentaires et les agencements de certains recueils modernes peuvent être protégés. Pour toute correction ou tout retrait : alexio@trom.tf.
@@ -60,6 +61,8 @@ Téléchargez `index.html` et ouvrez-le dans un navigateur ; il n'a besoin ni de
 La licence n'est pas encore déclarée.
 
 ## Historique / Changelog
+
+- 1.2.2 — 2026-10-19 : les 549 analyses SWOT / TOWS sont traduites en en, fr, it, es, pt, de, hu ; les notes ne disent plus que le reste demeure en roumain. Les proverbes restent en roumain.
 
 - 1.1.0 — 2026-10-14 : sauvegarde et étiquetage des données (fff-kit).
 
