@@ -2,7 +2,7 @@
 
 **English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version:** 1.2.6 · **Last updated:** 2026-10-23
+**Version:** 1.2.7 · **Last updated:** 2026-10-23
 
 Interface languages: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -40,7 +40,7 @@ ZICALA is an offline ("without borders", trade-free) application: no account, no
 
 ## Privacy and network
 
-- Storage: `localStorage` (keys `zf` for favourites, `zm` for added proverbs, `zs` for text size), if the browser allows it; otherwise the app works but does not keep the data and warns you. No cookies, `sessionStorage` or IndexedDB are used.
+- Storage: `localStorage` (keys `zicala.zf` for favourites, `zicala.zm` for added proverbs, `zicala.zs` for text size), if the browser allows it; otherwise the app works but does not keep the data and warns you. No cookies, `sessionStorage` or IndexedDB are used.
 - Network: no external calls. The page has a CSP policy (`default-src 'none'`, scripts only by hash, no `'unsafe-inline'` for scripts) that blocks any external connection or resource. The names of the sites in the "Sources" section are plain text, not links.
 - Browser permissions: none.
 
@@ -62,6 +62,7 @@ The license has not been declared yet.
 
 ## History / Changelog
 
+- 1.2.7 — 2026-10-23: fff-kit 1.2.0: the browser keys now carry the `zicala.` prefix (`zf` → `zicala.zf`, `zm` → `zicala.zm`, `zs` → `zicala.zs`); the old ones are migrated automatically at start-up (also after importing an old .fff.json backup), so favourites, added proverbs and text size are kept. The leftover availability-probe key `z` is no longer written (and is removed if present). The Romanian dictionary now has the `edRo` message too (dictionaries are symmetric in all 8 languages).
 - 1.2.5 — 2026-10-22: fff-kit 1.1.4: touch targets and minimum text size; touch targets/text fixed
 - 1.2.4 — 2026-10-22: fff-kit 1.1.2: PBKDF2 600,000 iterations, anti-clickjacking protection.
 - 1.2.3 — 2026-10-22: **fix**: the “Copy” button now follows the selected language.

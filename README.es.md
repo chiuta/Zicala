@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · **Español** · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versión:** 1.2.6 · **Última actualización:** 2026-10-23
+**Versión:** 1.2.7 · **Última actualización:** 2026-10-23
 
 Idiomas de la interfaz: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -40,7 +40,7 @@ ZICALA es una aplicación sin conexión («sin fronteras», trade-free): sin cue
 
 ## Privacidad y red
 
-- Almacenamiento: `localStorage` (claves `zf` para los favoritos, `zm` para los proverbios añadidos, `zs` para el tamaño del texto), si el navegador lo permite; de lo contrario, la aplicación funciona pero no conserva los datos y te avisa. No se usan cookies, `sessionStorage` ni IndexedDB.
+- Almacenamiento: `localStorage` (claves `zicala.zf` para los favoritos, `zicala.zm` para los proverbios añadidos, `zicala.zs` para el tamaño del texto), si el navegador lo permite; de lo contrario, la aplicación funciona pero no conserva los datos y te avisa. No se usan cookies, `sessionStorage` ni IndexedDB.
 - Red: ninguna llamada externa. La página tiene una política CSP (`default-src 'none'`, scripts solo mediante hash, sin `'unsafe-inline'` para scripts) que bloquea cualquier conexión o recurso externo. Los nombres de los sitios de la sección «Fuentes» son solo texto, no enlaces.
 - Permisos del navegador: ninguno.
 
@@ -62,6 +62,7 @@ La licencia aún no está declarada.
 
 ## Historial / Changelog
 
+- 1.2.7 — 2026-10-23: fff-kit 1.2.0: las claves del navegador llevan ahora el prefijo `zicala.` (`zf` → `zicala.zf`, `zm` → `zicala.zm`, `zs` → `zicala.zs`); las antiguas se migran automáticamente al iniciar (también tras importar una copia .fff.json antigua), así que se conservan los favoritos, los refranes añadidos y el tamaño del texto. La clave-sonda `z`, resto de la prueba de disponibilidad, ya no se escribe (y se elimina si existe). El diccionario rumano tiene ahora también el mensaje `edRo` (diccionarios simétricos en los 8 idiomas).
 - 1.2.5 — 2026-10-22: fff-kit 1.1.4: objetivos táctiles y texto mínimo; objetivos táctiles/texto corregidos
 - 1.2.4 — 2026-10-22: fff-kit 1.1.2: PBKDF2 con 600.000 iteraciones, protección anti-clickjacking.
 - 1.2.3 — 2026-10-22: **corrección**: el botón «Copiar» sigue ahora el idioma elegido.

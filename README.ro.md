@@ -2,7 +2,7 @@
 
 [English](README.md) · **Română** · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versiune:** 1.2.6 · **Ultima actualizare:** 2026-10-23
+**Versiune:** 1.2.7 · **Ultima actualizare:** 2026-10-23
 
 Limbile interfeței: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -40,7 +40,7 @@ ZICALA este o aplicație offline („fără frontiere”, trade-free): fără co
 
 ## Confidențialitate și rețea
 
-- Storage: `localStorage` (cheile `zf` pentru favorite, `zm` pentru proverbele adăugate, `zs` pentru mărimea textului), dacă browserul îl permite; altfel aplicația funcționează, dar nu păstrează datele și te avertizează. Nu se folosesc cookie-uri, `sessionStorage` sau IndexedDB.
+- Storage: `localStorage` (cheile `zicala.zf` pentru favorite, `zicala.zm` pentru proverbele adăugate, `zicala.zs` pentru mărimea textului), dacă browserul îl permite; altfel aplicația funcționează, dar nu păstrează datele și te avertizează. Nu se folosesc cookie-uri, `sessionStorage` sau IndexedDB.
 - Rețea: niciun apel extern. Pagina are o politică CSP (`default-src 'none'`, scripturi doar pe bază de hash, fără `'unsafe-inline'` pentru script) care blochează orice conexiune sau resursă externă. Numele site-urilor din secțiunea „Surse” sunt doar text, nu linkuri.
 - Permisiuni ale browserului: niciuna.
 
@@ -62,6 +62,7 @@ Licența nu este încă declarată.
 
 ## Istoric / Changelog
 
+- 1.2.7 — 2026-10-23: fff-kit 1.2.0: cheile din browser poartă acum prefixul `zicala.` (`zf` → `zicala.zf`, `zm` → `zicala.zm`, `zs` → `zicala.zs`); cele vechi sunt migrate automat la pornire (și după importul unei copii .fff.json vechi), deci favoritele, proverbele adăugate și mărimea textului se păstrează. Cheia-sondă `z`, rămasă din testul de disponibilitate, nu se mai scrie (și se șterge dacă există). Dicționarul românesc are acum și mesajul `edRo` (dicționarele sunt simetrice în toate cele 8 limbi).
 - 1.2.5 — 2026-10-22: fff-kit 1.1.4: ținte tactile și text minim; ținte tactile/text corectate
 - 1.2.4 — 2026-10-22: fff-kit 1.1.2: PBKDF2 600 000 de iterații, protecție anti-clickjacking.
 - 1.2.3 — 2026-10-22: **remediere**: butonul „Copiază” urmează acum limba aleasă.

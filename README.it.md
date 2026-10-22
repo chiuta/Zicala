@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · **Italiano** · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versione:** 1.2.6 · **Ultimo aggiornamento:** 2026-10-23
+**Versione:** 1.2.7 · **Ultimo aggiornamento:** 2026-10-23
 
 Lingue dell'interfaccia: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -40,7 +40,7 @@ ZICALA è un'applicazione offline («senza frontiere», trade-free): senza accou
 
 ## Privacy e rete
 
-- Archiviazione: `localStorage` (chiavi `zf` per i preferiti, `zm` per i proverbi aggiunti, `zs` per la dimensione del testo), se il browser lo consente; altrimenti l'app funziona ma non conserva i dati e ti avvisa. Non si usano cookie, `sessionStorage` né IndexedDB.
+- Archiviazione: `localStorage` (chiavi `zicala.zf` per i preferiti, `zicala.zm` per i proverbi aggiunti, `zicala.zs` per la dimensione del testo), se il browser lo consente; altrimenti l'app funziona ma non conserva i dati e ti avvisa. Non si usano cookie, `sessionStorage` né IndexedDB.
 - Rete: nessuna chiamata esterna. La pagina ha una politica CSP (`default-src 'none'`, script solo tramite hash, senza `'unsafe-inline'` per gli script) che blocca qualsiasi connessione o risorsa esterna. I nomi dei siti nella sezione «Fonti» sono semplice testo, non link.
 - Permessi del browser: nessuno.
 
@@ -62,6 +62,7 @@ La licenza non è ancora dichiarata.
 
 ## Cronologia / Changelog
 
+- 1.2.7 — 2026-10-23: fff-kit 1.2.0: le chiavi del browser portano ora il prefisso `zicala.` (`zf` → `zicala.zf`, `zm` → `zicala.zm`, `zs` → `zicala.zs`); quelle vecchie vengono migrate automaticamente all'avvio (anche dopo l'importazione di una vecchia copia .fff.json): preferiti, proverbi aggiunti e dimensione del testo restano. La chiave-sonda `z`, residuo del test di disponibilità, non viene più scritta (e viene rimossa se presente). Il dizionario rumeno ha ora anche il messaggio `edRo` (dizionari simmetrici in tutte le 8 lingue).
 - 1.2.5 — 2026-10-22: fff-kit 1.1.4: bersagli touch e testo minimo; bersagli touch/testo corretti
 - 1.2.4 — 2026-10-22: fff-kit 1.1.2: PBKDF2 a 600.000 iterazioni, protezione anti-clickjacking.
 - 1.2.3 — 2026-10-22: **correzione**: il pulsante «Copia» segue ora la lingua scelta.

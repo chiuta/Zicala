@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · **Deutsch** · [Magyar](README.hu.md)
 
-**Version:** 1.2.6 · **Zuletzt aktualisiert:** 2026-10-23
+**Version:** 1.2.7 · **Zuletzt aktualisiert:** 2026-10-23
 
 Oberflächensprachen: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -40,7 +40,7 @@ ZICALA ist eine Offline-Anwendung („ohne Grenzen", trade-free): ohne Konto, oh
 
 ## Datenschutz und Netzwerk
 
-- Speicher: `localStorage` (Schlüssel `zf` für Favoriten, `zm` für hinzugefügte Sprichwörter, `zs` für die Textgröße), sofern der Browser es erlaubt; andernfalls funktioniert die App, speichert aber keine Daten und warnt dich. Es werden keine Cookies, kein `sessionStorage` und keine IndexedDB verwendet.
+- Speicher: `localStorage` (Schlüssel `zicala.zf` für Favoriten, `zicala.zm` für hinzugefügte Sprichwörter, `zicala.zs` für die Textgröße), sofern der Browser es erlaubt; andernfalls funktioniert die App, speichert aber keine Daten und warnt dich. Es werden keine Cookies, kein `sessionStorage` und keine IndexedDB verwendet.
 - Netzwerk: keine externen Aufrufe. Die Seite hat eine CSP-Richtlinie (`default-src 'none'`, Skripte nur per Hash, ohne `'unsafe-inline'` für Skripte), die jede externe Verbindung oder Ressource blockiert. Die Namen der Seiten im Abschnitt „Quellen" sind reiner Text, keine Links.
 - Browser-Berechtigungen: keine.
 
@@ -62,6 +62,7 @@ Die Lizenz ist noch nicht festgelegt.
 
 ## Verlauf / Changelog
 
+- 1.2.7 — 2026-10-23: fff-kit 1.2.0: Die Browser-Schlüssel tragen jetzt das Präfix `zicala.` (`zf` → `zicala.zf`, `zm` → `zicala.zm`, `zs` → `zicala.zs`); die alten werden beim Start automatisch migriert (auch nach dem Import einer alten .fff.json-Sicherung), sodass Favoriten, hinzugefügte Sprichwörter und Textgröße erhalten bleiben. Der übrig gebliebene Verfügbarkeits-Testschlüssel `z` wird nicht mehr geschrieben (und entfernt, falls vorhanden). Das rumänische Wörterbuch enthält jetzt auch die Meldung `edRo` (symmetrische Wörterbücher in allen 8 Sprachen).
 - 1.2.5 — 2026-10-22: fff-kit 1.1.4: Touch-Ziele und Mindestschriftgröße; Touch-Ziele/Text korrigiert
 - 1.2.4 — 2026-10-22: fff-kit 1.1.2: PBKDF2 mit 600.000 Iterationen, Schutz vor Clickjacking.
 - 1.2.3 — 2026-10-22: **Korrektur**: die Schaltfläche „Kopieren“ folgt jetzt der gewählten Sprache.

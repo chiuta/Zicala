@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · **Magyar**
 
-**Verzió:** 1.2.6 · **Utolsó frissítés:** 2026-10-23
+**Verzió:** 1.2.7 · **Utolsó frissítés:** 2026-10-23
 
 A felület nyelvei: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -40,7 +40,7 @@ A ZICALA offline („határok nélküli", trade-free) alkalmazás: fiókot nem k
 
 ## Adatvédelem és hálózat
 
-- Tárolás: `localStorage` (a `zf` kulcs a kedvenceknek, a `zm` a hozzáadott közmondásoknak, a `zs` a betűméretnek), ha a böngésző engedi; ellenkező esetben az alkalmazás működik, de nem őrzi meg az adatokat, és figyelmeztet erre. Nem használ sütiket, `sessionStorage`-ot vagy IndexedDB-t.
+- Tárolás: `localStorage` (a `zicala.zf` kulcs a kedvenceknek, a `zicala.zm` a hozzáadott közmondásoknak, a `zicala.zs` a betűméretnek), ha a böngésző engedi; ellenkező esetben az alkalmazás működik, de nem őrzi meg az adatokat, és figyelmeztet erre. Nem használ sütiket, `sessionStorage`-ot vagy IndexedDB-t.
 - Hálózat: nincs külső hívás. Az oldalon CSP-szabályzat van (`default-src 'none'`, szkriptek csak hash alapján, a szkriptekhez `'unsafe-inline'` nélkül), amely blokkol minden külső kapcsolatot vagy erőforrást. A „Források” szakaszban szereplő oldalak nevei csak szövegek, nem hivatkozások.
 - Böngészőengedélyek: nincs.
 
@@ -62,6 +62,7 @@ A licenc még nincs megadva.
 
 ## Előzmények / Changelog
 
+- 1.2.7 — 2026-10-23: fff-kit 1.2.0: a böngészőkulcsok mostantól a `zicala.` előtagot viselik (`zf` → `zicala.zf`, `zm` → `zicala.zm`, `zs` → `zicala.zs`); a régieket az alkalmazás induláskor automatikusan átköltözteti (régi .fff.json mentés importálása után is), így a kedvencek, a hozzáadott közmondások és a szövegméret megmaradnak. A rendelkezésre állást tesztelő, megmaradt `z` próbakulcsot már nem írja (és törli, ha létezik). A román szótár mostantól tartalmazza az `edRo` üzenetet is (szimmetrikus szótárak mind a 8 nyelven).
 - 1.2.5 — 2026-10-22: fff-kit 1.1.4: érintési célpontok és minimális szövegméret; érintési célpontok/szöveg javítva
 - 1.2.4 — 2026-10-22: fff-kit 1.1.2: PBKDF2 600 000 iterációval, clickjacking elleni védelem.
 - 1.2.3 — 2026-10-22: **javítás**: a „Másolás” gomb mostantól a kiválasztott nyelvet követi.

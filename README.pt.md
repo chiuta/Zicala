@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · **Português** · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versão:** 1.2.6 · **Última atualização:** 2026-10-23
+**Versão:** 1.2.7 · **Última atualização:** 2026-10-23
 
 Idiomas da interface: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -40,7 +40,7 @@ A ZICALA é uma aplicação offline («sem fronteiras», trade-free): sem conta,
 
 ## Privacidade e rede
 
-- Armazenamento: `localStorage` (chaves `zf` para os favoritos, `zm` para os provérbios adicionados, `zs` para o tamanho do texto), se o navegador o permitir; caso contrário, a aplicação funciona, mas não guarda os dados e avisa-o. Não são usados cookies, `sessionStorage` nem IndexedDB.
+- Armazenamento: `localStorage` (chaves `zicala.zf` para os favoritos, `zicala.zm` para os provérbios adicionados, `zicala.zs` para o tamanho do texto), se o navegador o permitir; caso contrário, a aplicação funciona, mas não guarda os dados e avisa-o. Não são usados cookies, `sessionStorage` nem IndexedDB.
 - Rede: nenhuma chamada externa. A página tem uma política CSP (`default-src 'none'`, scripts apenas por hash, sem `'unsafe-inline'` para scripts) que bloqueia qualquer ligação ou recurso externo. Os nomes dos sites na secção «Fontes» são apenas texto, não ligações.
 - Permissões do navegador: nenhuma.
 
@@ -62,6 +62,7 @@ A licença ainda não está declarada.
 
 ## Histórico / Changelog
 
+- 1.2.7 — 2026-10-23: fff-kit 1.2.0: as chaves do navegador têm agora o prefixo `zicala.` (`zf` → `zicala.zf`, `zm` → `zicala.zm`, `zs` → `zicala.zs`); as antigas são migradas automaticamente no arranque (também após a importação de uma cópia .fff.json antiga), pelo que se mantêm os favoritos, os provérbios adicionados e o tamanho do texto. A chave-sonda `z`, resto do teste de disponibilidade, já não é escrita (e é removida se existir). O dicionário romeno tem agora também a mensagem `edRo` (dicionários simétricos nos 8 idiomas).
 - 1.2.5 — 2026-10-22: fff-kit 1.1.4: alvos táteis e texto mínimo; alvos táteis/texto corrigidos
 - 1.2.4 — 2026-10-22: fff-kit 1.1.2: PBKDF2 com 600.000 iterações, proteção anti-clickjacking.
 - 1.2.3 — 2026-10-22: **correção**: o botão «Copiar» segue agora o idioma escolhido.

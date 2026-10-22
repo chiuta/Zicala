@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · **Français** · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version :** 1.2.6 · **Dernière mise à jour :** 2026-10-23
+**Version :** 1.2.7 · **Dernière mise à jour :** 2026-10-23
 
 Langues de l'interface : **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -40,7 +40,7 @@ ZICALA est une application hors ligne (« sans frontières », trade-free) : san
 
 ## Confidentialité et réseau
 
-- Stockage : `localStorage` (clés `zf` pour les favoris, `zm` pour les proverbes ajoutés, `zs` pour la taille du texte), si le navigateur l'autorise ; sinon l'application fonctionne mais ne conserve pas les données et vous en avertit. Aucun cookie, `sessionStorage` ou IndexedDB n'est utilisé.
+- Stockage : `localStorage` (clés `zicala.zf` pour les favoris, `zicala.zm` pour les proverbes ajoutés, `zicala.zs` pour la taille du texte), si le navigateur l'autorise ; sinon l'application fonctionne mais ne conserve pas les données et vous en avertit. Aucun cookie, `sessionStorage` ou IndexedDB n'est utilisé.
 - Réseau : aucun appel externe. La page a une politique CSP (`default-src 'none'`, scripts uniquement par empreinte, sans `'unsafe-inline'` pour les scripts) qui bloque toute connexion ou ressource externe. Les noms des sites de la section « Sources » sont du simple texte, pas des liens.
 - Autorisations du navigateur : aucune.
 
@@ -62,6 +62,7 @@ La licence n'est pas encore déclarée.
 
 ## Historique / Changelog
 
+- 1.2.7 — 2026-10-23: fff-kit 1.2.0 : les clés du navigateur portent désormais le préfixe `zicala.` (`zf` → `zicala.zf`, `zm` → `zicala.zm`, `zs` → `zicala.zs`) ; les anciennes sont migrées automatiquement au démarrage (y compris après l'import d'une ancienne sauvegarde .fff.json) : favoris, proverbes ajoutés et taille du texte sont conservés. La clé-sonde `z`, reliquat du test de disponibilité, n'est plus écrite (et est supprimée si elle existe). Le dictionnaire roumain contient aussi le message `edRo` (dictionnaires symétriques dans les 8 langues).
 - 1.2.5 — 2026-10-22 : fff-kit 1.1.4 : cibles tactiles et taille de texte minimale; cibles tactiles/texte corrigés
 - 1.2.4 — 2026-10-22 : fff-kit 1.1.2 : PBKDF2 à 600 000 itérations, protection anti-clickjacking.
 - 1.2.3 — 2026-10-22: **correctif** : le bouton « Copier » suit désormais la langue choisie.
