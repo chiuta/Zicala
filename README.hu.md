@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · **Magyar**
 
-**Verzió:** 1.2.2 · **Utolsó frissítés:** 2026-10-19
+**Verzió:** 1.2.3 · **Utolsó frissítés:** 2026-10-22
 
 A felület nyelvei: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -62,6 +62,7 @@ A licenc még nincs megadva.
 
 ## Előzmények / Changelog
 
+- 1.2.3 — 2026-10-22: **javítás**: a „Másolás” gomb mostantól a kiválasztott nyelvet követi.
 - 1.2.2 — 2026-10-19: mind az 549 SWOT / TOWS-elemzés le van fordítva en, fr, it, es, pt, de, hu nyelvre; a megjegyzések már nem állítják, hogy a többi románul marad. A közmondások románul maradnak.
 
 - 1.1.0 — 2026-10-14: biztonsági mentés és adatcímkézés (fff-kit).

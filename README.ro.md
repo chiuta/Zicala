@@ -2,7 +2,7 @@
 
 [English](README.md) · **Română** · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versiune:** 1.2.2 · **Ultima actualizare:** 2026-10-19
+**Versiune:** 1.2.3 · **Ultima actualizare:** 2026-10-22
 
 Limbile interfeței: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -62,6 +62,7 @@ Licența nu este încă declarată.
 
 ## Istoric / Changelog
 
+- 1.2.3 — 2026-10-22: **remediere**: butonul „Copiază” urmează acum limba aleasă.
 - 1.2.2 — 2026-10-19: toate cele 549 de analize SWOT / TOWS sunt traduse în en, fr, it, es, pt, de, hu; notele nu mai spun că restul rămâne în română. Proverbele rămân în română.
 
 - 1.1.0 — 2026-10-14: Copie de rezervă și etichetare date (fff-kit).
