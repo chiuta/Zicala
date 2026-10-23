@@ -2,7 +2,7 @@
 
 [English](README.md) · **Română** · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versiune:** 1.2.7 · **Ultima actualizare:** 2026-10-23
+**Versiune:** 1.2.8 · **Ultima actualizare:** 2026-10-23
 
 Limbile interfeței: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -62,6 +62,7 @@ Licența nu este încă declarată.
 
 ## Istoric / Changelog
 
+- 1.2.8 — 2026-10-23: audit: limba interfeței se păstrează acum sub `zicala.lang` (folosea cheia fără prefix `lang`, comună tuturor aplicațiilor de pe aceeași origine `chiuta.github.io`); o valoare `lang` existentă este citită în continuare ca rezervă și nu este ștearsă. `zicala.zf`, `zicala.zm` și `zicala.lang` sunt acum declarate în `storageKeys`.
 - 1.2.7 — 2026-10-23: fff-kit 1.2.0: cheile din browser poartă acum prefixul `zicala.` (`zf` → `zicala.zf`, `zm` → `zicala.zm`, `zs` → `zicala.zs`); cele vechi sunt migrate automat la pornire (și după importul unei copii .fff.json vechi), deci favoritele, proverbele adăugate și mărimea textului se păstrează. Cheia-sondă `z`, rămasă din testul de disponibilitate, nu se mai scrie (și se șterge dacă există). Dicționarul românesc are acum și mesajul `edRo` (dicționarele sunt simetrice în toate cele 8 limbi).
 - 1.2.5 — 2026-10-22: fff-kit 1.1.4: ținte tactile și text minim; ținte tactile/text corectate
 - 1.2.4 — 2026-10-22: fff-kit 1.1.2: PBKDF2 600 000 de iterații, protecție anti-clickjacking.

@@ -2,7 +2,7 @@
 
 **English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version:** 1.2.7 · **Last updated:** 2026-10-23
+**Version:** 1.2.8 · **Last updated:** 2026-10-23
 
 Interface languages: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -62,6 +62,7 @@ The license has not been declared yet.
 
 ## History / Changelog
 
+- 1.2.8 — 2026-10-23: audit: the interface language is now stored under `zicala.lang` (it used the unprefixed key `lang`, shared by every app on the same `chiuta.github.io` origin); an existing `lang` value is still read once as a fallback and is not deleted. `zicala.zf`, `zicala.zm` and `zicala.lang` are now declared in `storageKeys`.
 - 1.2.7 — 2026-10-23: fff-kit 1.2.0: the browser keys now carry the `zicala.` prefix (`zf` → `zicala.zf`, `zm` → `zicala.zm`, `zs` → `zicala.zs`); the old ones are migrated automatically at start-up (also after importing an old .fff.json backup), so favourites, added proverbs and text size are kept. The leftover availability-probe key `z` is no longer written (and is removed if present). The Romanian dictionary now has the `edRo` message too (dictionaries are symmetric in all 8 languages).
 - 1.2.5 — 2026-10-22: fff-kit 1.1.4: touch targets and minimum text size; touch targets/text fixed
 - 1.2.4 — 2026-10-22: fff-kit 1.1.2: PBKDF2 600,000 iterations, anti-clickjacking protection.
