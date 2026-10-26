@@ -1,3 +1,15 @@
 {
-  "bundleKeys": ["zf", "zm", "zs"]
+  "bundleKeys": [
+    "zf",
+    "zm",
+    "zs"
+  ],
+  "storageKeys": [
+    "lang",
+    "zicala.lang",
+    "zicala.probe",
+    "zicala.zf",
+    "zicala.zm",
+    "zicala.zs"
+  ]
 }

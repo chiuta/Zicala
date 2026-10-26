@@ -15,10 +15,12 @@
     "lang",
     "zicala.lang",
     "zicala.probe",
+    "zicala.zf",
+    "zicala.zm",
     "zicala.zs"
   ],
-  "sizeBytes": 5229118,
-  "sha256": "f2a6cff5e4cb190303f345a0c66c481409bbed9a8088023ad985c44bcbdc89e5",
+  "sizeBytes": 5229142,
+  "sha256": "4bbf508b43c022cf9a8df6994265f91781f57817a35bfdb71294a97a722c9e64",
   "csp": {
     "present": true,
     "directives": {
