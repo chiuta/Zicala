@@ -22,8 +22,8 @@
     "zicala.zn",
     "zicala.zs"
   ],
-  "sizeBytes": 5259360,
-  "sha256": "13e7f666e4d2e4cc7700bbe7a8c3796437c70db75a4b0878a36d68809c9fa4cb",
+  "sizeBytes": 5259364,
+  "sha256": "2f71c3017019370464395e187f1e48fab9d549551532a40bf8fa2c95becb5e44",
   "csp": {
     "present": true,
     "directives": {
