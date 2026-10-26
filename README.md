@@ -2,7 +2,7 @@
 
 **English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version:** 1.2.9 · **Last updated:** 2026-10-26
+**Version:** 2.0.0 · **Last updated:** 2026-10-26
 
 Interface languages: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -18,6 +18,7 @@ ZICALA is an offline ("without borders", trade-free) application: no account, no
 
 ## Features
 
+- **Game of the day (2.0.0):** a matching game and a generated crossword built daily from the 550 proverbs; **kinships** (the same thought in the other 7 languages, plus close proverbs found automatically from the translations, flagged as editorial interpretation); printable cards; optional local daily notification.
 - Proverb of the day: chosen deterministically from the local date; within a cycle of 550 days none is repeated.
 - "Draw at random": goes through all the proverbs in random order (Fisher–Yates shuffle), with no repeats until the rounds are finished; "Copy" button.
 - Word search (all words must appear), insensitive to diacritics and letter case: "tacerea" finds "Tăcerea".

@@ -2,7 +2,7 @@
 
 [English](README.md) · **Română** · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versiune:** 1.2.9 · **Ultima actualizare:** 2026-10-26
+**Versiune:** 2.0.0 · **Ultima actualizare:** 2026-10-26
 
 Limbile interfeței: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -26,6 +26,9 @@ ZICALA este o aplicație offline („fără frontiere”, trade-free): fără co
 - Export al favoritelor și adăugirilor într-un fișier text și import al aceluiași fișier (adaugă, nu înlocuiește).
 - „Copiază” pe fiecare proverb din listă; mărimea textului A− / A+ (4 trepte, memorată local); scurtături de tastatură: `/` pentru căutare, `R` pentru „Trage la sorți” (nu se declanșează când scrii într-un câmp).
 - Tipărire: „Tipărește lista” (sau Ctrl/Cmd+P) tipărește toată lista filtrată curentă (de exemplu doar favoritele), alb-negru, fără butoane.
+- **Jocul zilei (2.0.0):** două jocuri generate zilnic, determinist, din cele 550 de proverbe — „Potrivire” (6 proverbe tăiate în două, de reunit) și „Cuvinte încrucișate” (grilă generată, cu indicii de tip proverb fără un cuvânt); „Altă rundă” aduce alte jocuri, rezolvarea zilei se bifează local.
+- **Înrudiri (2.0.0):** pentru fiecare proverb, același gând în celelalte 7 limbi și până la 3 proverbe apropiate ca sens, stabilite automat după traduceri — interpretare editorială, nu sursă paremiologică.
+- **Cărți tipăribile și notificare locală (2.0.0):** „Tipărește cărți” (8 pe pagină, din lista curentă) și „Notificare zilnică” (apare când deschizi aplicația într-o zi nouă; nu se trimite nimic prin rețea).
 - Pentru fiecare proverb, un panou „SWOT / TOWS” (interpretare editorială, vezi mai jos).
 
 ## Manual de utilizare
