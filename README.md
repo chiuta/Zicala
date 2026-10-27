@@ -2,7 +2,9 @@
 
 **English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version:** 2.0.0 · **Last updated:** 2026-10-26
+**Version:** 2.1.0 · **Last updated:** 2026-10-27
+
+**Status:** stable · **Offline:** complete (no network requests)
 
 Interface languages: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -21,6 +23,7 @@ ZICALA is an offline ("without borders", trade-free) application: no account, no
 - **Game of the day (2.0.0):** a matching game and a generated crossword built daily from the 550 proverbs; **kinships** (the same thought in the other 7 languages, plus close proverbs found automatically from the translations, flagged as editorial interpretation); printable cards; optional local daily notification.
 - Proverb of the day: chosen deterministically from the local date; within a cycle of 550 days none is repeated.
 - "Draw at random": goes through all the proverbs in random order (Fisher–Yates shuffle), with no repeats until the rounds are finished; "Copy" button.
+- **Search by theme (2.1.0):** the search box also matches the *name of the theme* (in Romanian and in the interface language) for the 11 thematic categories: typing "patience", "family" or "răbdare" lists the proverbs of that theme as well as those containing the word. The category list and the "Kinships" panel (the same thought in the other 7 languages) already existed.
 - Word search (all words must appear), insensitive to diacritics and letter case: "tacerea" finds "Tăcerea".
 - Filter by category and by favourites; list displayed progressively (60 rows, "Show more").
 - Favourites (★) and your own proverbs (add/delete), saved locally.
@@ -28,6 +31,13 @@ ZICALA is an offline ("without borders", trade-free) application: no account, no
 - "Copy" on every proverb in the list; text size A− / A+ (4 steps, remembered locally); keyboard shortcuts: `/` for search, `R` for "Draw at random" (not triggered while you are typing in a field).
 - Printing: "Print list" (or Ctrl/Cmd+P) prints the whole currently filtered list (for example only the favourites), in black and white, without buttons.
 - For each proverb, a "SWOT / TOWS" panel (editorial interpretation, see below).
+
+## Sources of the proverbs (bibliographic record)
+
+- **Hințescu category:** I. C. Hințescu, *Proverbele româniloru*, Sibiu, Editura și tiparulu tipografiei eredei de Closius, 1877, VIII + 210 p. (record of the Cluj Central University Library digital repository, https://dspace.bcucluj.ro/handle/123456789/78917, checked on 2026-10-27). The text in the app was taken from ro.wikisource.org with updated spelling; **which edition that transcription follows was not checked** (to be verified).
+- **"Other online collections" category:** the exact source of each proverb is not recorded (general sources: ppli.ie, digitalpedia.ro, Enciclopedia comunei Șerbănești, proverbesicitate.blogspot.com, adevarul.ro). No edition or author is attributed.
+- **First 11 categories:** a basic collection from the oral tradition; no source is attributed. Folk proverbs are anonymous.
+- The same record appears in the app ("Sources, rights and a warning…", 8 languages).
 
 ## User guide
 
@@ -62,6 +72,11 @@ Download `index.html` and open it in a browser; it needs no server or internet.
 The license has not been declared yet.
 
 ## History / Changelog
+
+Full changelog: [`CHANGELOG.md`](CHANGELOG.md).
+
+### 2.1.0 — 2026-10-27 (previous: v2.0.0)
+- New: search by theme; bibliographic record of the Hințescu collection in the "Sources" section (8 languages); search placeholder updated.
 
 - 1.2.8 — 2026-10-23: audit: the interface language is now stored under `zicala.lang` (it used the unprefixed key `lang`, shared by every app on the same `chiuta.github.io` origin); an existing `lang` value is still read once as a fallback and is not deleted. `zicala.zf`, `zicala.zm` and `zicala.lang` are now declared in `storageKeys`.
 - 1.2.7 — 2026-10-23: fff-kit 1.2.0: the browser keys now carry the `zicala.` prefix (`zf` → `zicala.zf`, `zm` → `zicala.zm`, `zs` → `zicala.zs`); the old ones are migrated automatically at start-up (also after importing an old .fff.json backup), so favourites, added proverbs and text size are kept. The leftover availability-probe key `z` is no longer written (and is removed if present). The Romanian dictionary now has the `edRo` message too (dictionaries are symmetric in all 8 languages).

@@ -2,7 +2,9 @@
 
 [English](README.md) · **Română** · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versiune:** 2.0.0 · **Ultima actualizare:** 2026-10-26
+**Versiune:** 2.1.0 · **Ultima actualizare:** 2026-10-27
+
+**Stare:** stabil · **Offline:** complet (fără cereri în rețea)
 
 Limbile interfeței: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -20,6 +22,7 @@ ZICALA este o aplicație offline („fără frontiere”, trade-free): fără co
 
 - Proverbul zilei: ales determinist după data locală; într-un ciclu de 550 de zile nu se repetă niciunul.
 - „Trage la sorți”: parcurge toate proverbele în ordine aleatorie (amestecare Fisher–Yates), fără repetări până se termină tururile; buton „Copiază”.
+- **Căutare după temă (2.1.0):** câmpul de căutare potrivește și *numele temei* (în română și în limba interfeței) pentru cele 11 categorii tematice: „răbdare”, „familie” sau „patience” listează proverbele temei, nu doar pe cele care conțin cuvântul. Lista de categorii și panoul „Înrudiri” (același gând în celelalte 7 limbi) existau deja.
 - Căutare pe cuvinte (toate cuvintele trebuie să apară), insensibilă la diacritice și la majuscule: „tacerea” găsește „Tăcerea”.
 - Filtru pe categorie și pe favorite; listă afișată progresiv (60 de rânduri, „Arată încă”).
 - Favorite (★) și proverbe proprii (adăugare/ștergere), salvate local.
@@ -30,6 +33,13 @@ ZICALA este o aplicație offline („fără frontiere”, trade-free): fără co
 - **Înrudiri (2.0.0):** pentru fiecare proverb, același gând în celelalte 7 limbi și până la 3 proverbe apropiate ca sens, stabilite automat după traduceri — interpretare editorială, nu sursă paremiologică.
 - **Cărți tipăribile și notificare locală (2.0.0):** „Tipărește cărți” (8 pe pagină, din lista curentă) și „Notificare zilnică” (apare când deschizi aplicația într-o zi nouă; nu se trimite nimic prin rețea).
 - Pentru fiecare proverb, un panou „SWOT / TOWS” (interpretare editorială, vezi mai jos).
+
+## Sursele proverbelor (fișă bibliografică)
+
+- **Categoria Hințescu:** I. C. Hințescu, *Proverbele româniloru*, Sibiu, Editura și tiparulu tipografiei eredei de Closius, 1877, VIII + 210 p. (înregistrare din depozitul digital al Bibliotecii Centrale Universitare Cluj, https://dspace.bcucluj.ro/handle/123456789/78917, verificată la 27.10.2026). Textul din aplicație a fost preluat de pe ro.wikisource.org, cu ortografia actualizată; **ediția după care urmează acea transcriere nu a fost verificată** (de verificat).
+- **Categoria „Alte culegeri online”:** sursa exactă a fiecărui proverb nu este înregistrată (surse generale: ppli.ie, digitalpedia.ro, Enciclopedia comunei Șerbănești, proverbesicitate.blogspot.com, adevarul.ro). Nu se atribuie nicio ediție sau vreun autor.
+- **Primele 11 categorii:** colecție de bază din tradiția orală; nu se atribuie nicio sursă. Proverbele populare sunt anonime.
+- Aceeași fișă apare în aplicație („Surse, drepturi și avertisment…”, 8 limbi).
 
 ## Manual de utilizare
 
@@ -64,6 +74,11 @@ Descarcă `index.html` și deschide-l în browser; nu are nevoie de server sau d
 Licența nu este încă declarată.
 
 ## Istoric / Changelog
+
+Jurnal complet: [`CHANGELOG.md`](CHANGELOG.md).
+
+### 2.1.0 — 2026-10-27 (anterior: v2.0.0)
+- Nou: căutare după temă; fișa bibliografică a culegerii Hințescu în secțiunea „Surse” (8 limbi); textul de ghidaj al căutării actualizat.
 
 - 1.2.8 — 2026-10-23: audit: limba interfeței se păstrează acum sub `zicala.lang` (folosea cheia fără prefix `lang`, comună tuturor aplicațiilor de pe aceeași origine `chiuta.github.io`); o valoare `lang` existentă este citită în continuare ca rezervă și nu este ștearsă. `zicala.zf`, `zicala.zm` și `zicala.lang` sunt acum declarate în `storageKeys`.
 - 1.2.7 — 2026-10-23: fff-kit 1.2.0: cheile din browser poartă acum prefixul `zicala.` (`zf` → `zicala.zf`, `zm` → `zicala.zm`, `zs` → `zicala.zs`); cele vechi sunt migrate automat la pornire (și după importul unei copii .fff.json vechi), deci favoritele, proverbele adăugate și mărimea textului se păstrează. Cheia-sondă `z`, rămasă din testul de disponibilitate, nu se mai scrie (și se șterge dacă există). Dicționarul românesc are acum și mesajul `edRo` (dicționarele sunt simetrice în toate cele 8 limbi).
