@@ -1,5 +1,16 @@
 # Jurnal de modificări — ZICALA
 
+## 2.2.0 — 2026-10-27
+
+Anterior: v2.1.0. Recenzie 2 (2026-10-27).
+
+- Căutare după culegere: câmpul de căutare potrivește acum și numele celor două culegeri-sursă (rămăseseră excluse în 2.1.0): „hintescu” listează exact selecția Hințescu, „culegeri online” selecția „Alte culegeri online” (în limba interfeței: de ex. „collection”). Doar numele culegerii; nu se atribuie nicio sursă proverbelor individuale.
+- Textul de ghidaj al căutării („cuvânt, temă sau culegere”) în 8 limbi (fr/it/es/pt/de/hu asistate de AI, neverificate de vorbitori nativi).
+- Test nou `tests/cautare-culegere.test.mjs`. Hash-ul CSP recalculat; versiunea aliniată.
+- README: EN/RO actualizate; fr/it/es/pt/de/hu doar versiunea și data.
+
+Nu s-a implementat: corespondențe suplimentare în alte limbi (nu există surse verificabile pentru echivalente noi; panoul „Înrudiri” din 2.0.0 rămâne cum era); sursă per proverb pentru „Alte culegeri online” (nu e înregistrată); licență (autorul nu a declarat-o).
+
 ## 2.1.0 — 2026-10-27
 
 Anterior: v2.0.0. Recenzie 2026-10-27.

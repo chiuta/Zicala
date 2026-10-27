@@ -2,7 +2,7 @@
 
 **English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version:** 2.1.0 · **Last updated:** 2026-10-27
+**Version:** 2.2.0 · **Last updated:** 2026-10-27
 
 **Status:** stable · **Offline:** complete (no network requests)
 
@@ -24,6 +24,7 @@ ZICALA is an offline ("without borders", trade-free) application: no account, no
 - Proverb of the day: chosen deterministically from the local date; within a cycle of 550 days none is repeated.
 - "Draw at random": goes through all the proverbs in random order (Fisher–Yates shuffle), with no repeats until the rounds are finished; "Copy" button.
 - **Search by theme (2.1.0):** the search box also matches the *name of the theme* (in Romanian and in the interface language) for the 11 thematic categories: typing "patience", "family" or "răbdare" lists the proverbs of that theme as well as those containing the word. The category list and the "Kinships" panel (the same thought in the other 7 languages) already existed.
+- **Search by collection (2.2.0):** the box also matches the names of the two source collections: typing "hintescu" lists exactly the selection from the Hințescu collection, "culegeri online" (or "collection" in English) the "Other online collections" selection. The search hint now says "a word, a theme or a collection".
 - Word search (all words must appear), insensitive to diacritics and letter case: "tacerea" finds "Tăcerea".
 - Filter by category and by favourites; list displayed progressively (60 rows, "Show more").
 - Favourites (★) and your own proverbs (add/delete), saved locally.

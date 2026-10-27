@@ -2,7 +2,7 @@
 
 [English](README.md) · **Română** · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versiune:** 2.1.0 · **Ultima actualizare:** 2026-10-27
+**Versiune:** 2.2.0 · **Ultima actualizare:** 2026-10-27
 
 **Stare:** stabil · **Offline:** complet (fără cereri în rețea)
 
@@ -23,6 +23,7 @@ ZICALA este o aplicație offline („fără frontiere”, trade-free): fără co
 - Proverbul zilei: ales determinist după data locală; într-un ciclu de 550 de zile nu se repetă niciunul.
 - „Trage la sorți”: parcurge toate proverbele în ordine aleatorie (amestecare Fisher–Yates), fără repetări până se termină tururile; buton „Copiază”.
 - **Căutare după temă (2.1.0):** câmpul de căutare potrivește și *numele temei* (în română și în limba interfeței) pentru cele 11 categorii tematice: „răbdare”, „familie” sau „patience” listează proverbele temei, nu doar pe cele care conțin cuvântul. Lista de categorii și panoul „Înrudiri” (același gând în celelalte 7 limbi) existau deja.
+- **Căutare după culegere (2.2.0):** câmpul potrivește și numele celor două culegeri-sursă: „hintescu” listează exact selecția din culegerea Hințescu, „culegeri online” selecția „Alte culegeri online”. Textul de ghidaj spune acum „un cuvânt, o temă sau o culegere”.
 - Căutare pe cuvinte (toate cuvintele trebuie să apară), insensibilă la diacritice și la majuscule: „tacerea” găsește „Tăcerea”.
 - Filtru pe categorie și pe favorite; listă afișată progresiv (60 de rânduri, „Arată încă”).
 - Favorite (★) și proverbe proprii (adăugare/ștergere), salvate local.
