@@ -22,8 +22,8 @@
     "zicala.zn",
     "zicala.zs"
   ],
-  "sizeBytes": 5264463,
-  "sha256": "e904397150e9853a98c12b7eade0bf8fdeaf97d87bac1014bf4eb6a0cfa52011",
+  "sizeBytes": 5404897,
+  "sha256": "0c0f3c6f3dd2cf4df9c8cb9a4f990bfb019e155a8f8f5dacef90332d54bb18c8",
   "csp": {
     "present": true,
     "directives": {
@@ -61,7 +61,11 @@
       "store",
       "dialog",
       "label",
-      "bundle"
+      "bundle",
+      "qr",
+      "p2p",
+      "sync",
+      "history"
     ]
   },
   "kit": {
@@ -71,7 +75,11 @@
       "store",
       "dialog",
       "label",
-      "bundle"
+      "bundle",
+      "qr",
+      "p2p",
+      "sync",
+      "history"
     ]
   },
   "selfSerializing": false,
