@@ -1,4 +1,4 @@
-// ZICALA 2.2.1 — căutarea potrivește și numele culegerilor („Hințescu”, „Alte culegeri online”), nu doar al celor 11 teme.
+// ZICALA 2.2.2 — căutarea potrivește și numele culegerilor („Hințescu”, „Alte culegeri online”), nu doar al celor 11 teme.
 // Rulare: node tests/cautare-culegere.test.mjs   (Playwright + Chromium, rețea blocată)
 import {createRequire} from 'module';
 import path from 'node:path';

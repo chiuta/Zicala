@@ -47,7 +47,7 @@ console.log('ZICALA — jocul zilei');
   ok(a === await p2.evaluate(() => GS.m.pairs.map(p => p.t).join('|')), 'potrivire: aceeași zi → aceleași perechi');
   await p2.click('#gNew');
   ok(a !== await p2.evaluate(() => GS.m.pairs.map(p => p.t).join('|')), 'potrivire: „Altă rundă” schimbă perechile');
-  const p3 = await ctx.newPage(); await p3.clock.setFixedTime(new Date('2026-11-07T12:00:00Z')); await p3.goto(APP); await p3.waitForTimeout(300);
+  const p3 = await ctx.newPage(); await p3.clock.setFixedTime(new Date('2026-11-08T12:00:00Z')); await p3.goto(APP); await p3.waitForTimeout(300);
   ok(a !== await p3.evaluate(() => GS.m.pairs.map(p => p.t).join('|')), 'potrivire: altă zi → alte perechi');
   ok(!(await p3.textContent('#tMok')).includes('✓'), 'potrivire: bifa nu trece în ziua următoare');
   await ctx.close();
