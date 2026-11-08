@@ -2,7 +2,7 @@
 
 [English](README.md) · **Română** · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versiune:** 2.2.2 · **Ultima actualizare:** 2026-11-08
+**Versiune:** 2.2.3 · **Ultima actualizare:** 2026-11-08
 
 **Stare:** stabil · **Offline:** complet (fără cereri în rețea)
 
@@ -72,7 +72,7 @@ Descarcă `index.html` și deschide-l în browser; nu are nevoie de server sau d
 
 ## Licență
 
-Licența nu este încă declarată.
+Proiectul este publicat sub **licența MIT** (vezi fișierul `LICENSE`). Textele proverbelor au sursele descrise în secțiunea de surse.
 
 ## Istoric / Changelog
 

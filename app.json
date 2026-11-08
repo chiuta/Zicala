@@ -2,7 +2,7 @@
   "schema": 1,
   "slug": "zicala",
   "name": "ZICALA — proverbe românești",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "updated": "2026-11-08",
   "description": "ZICALA: 550 de proverbe și zicători românești, căutare fără diacritice, proverbul zilei, tras la sorți, favorite. Fără cont, fără urmărire, offline.",
   "egress": [],
@@ -23,7 +23,7 @@
     "zicala.zs"
   ],
   "sizeBytes": 5420188,
-  "sha256": "0b2863e6b7c00d20056048d2a4899b1ca2b8c4a18e2268a04e5868a36d35b28b",
+  "sha256": "eb38a3f4e224017b55a8e2111594168f9e4173d6c6f3bf715716317b0fcdf0ad",
   "csp": {
     "present": true,
     "directives": {

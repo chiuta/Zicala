@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · **Français** · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version :** 2.2.2 · **Dernière mise à jour :** 2026-11-08
+**Version :** 2.2.3 · **Dernière mise à jour :** 2026-11-08
 
 Langues de l'interface : **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -58,7 +58,7 @@ Téléchargez `index.html` et ouvrez-le dans un navigateur ; il n'a besoin ni de
 
 ## Licence
 
-La licence n'est pas encore déclarée.
+Ce projet est publié sous **licence MIT** (voir le fichier `LICENSE`). Les textes des proverbes ont les sources décrites dans la section des sources.
 
 ## Historique / Changelog
 

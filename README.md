@@ -2,7 +2,7 @@
 
 **English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version:** 2.2.2 · **Last updated:** 2026-11-08
+**Version:** 2.2.3 · **Last updated:** 2026-11-08
 
 **Status:** stable · **Offline:** complete (no network requests)
 
@@ -70,7 +70,7 @@ Download `index.html` and open it in a browser; it needs no server or internet.
 
 ## License
 
-The license has not been declared yet.
+This project is released under the **MIT License** (see the `LICENSE` file). The proverb texts are sourced as described in the sources section.
 
 ## History / Changelog
 

@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · **Magyar**
 
-**Verzió:** 2.2.2 · **Utolsó frissítés:** 2026-11-08
+**Verzió:** 2.2.3 · **Utolsó frissítés:** 2026-11-08
 
 A felület nyelvei: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -58,7 +58,7 @@ Töltsd le az `index.html` fájlt, és nyisd meg böngészőben; nincs szükség
 
 ## Licenc
 
-A licenc még nincs megadva.
+A projekt **MIT licenc** alatt jelent meg (lásd a `LICENSE` fájlt). A közmondások szövegeinek forrásait a források szakasz írja le.
 
 ## Előzmények / Changelog
 

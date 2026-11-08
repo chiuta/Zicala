@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · **Português** · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versão:** 2.2.2 · **Última atualização:** 2026-11-08
+**Versão:** 2.2.3 · **Última atualização:** 2026-11-08
 
 Idiomas da interface: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -58,7 +58,7 @@ Descarregue `index.html` e abra-o no navegador; não precisa de servidor nem de 
 
 ## Licença
 
-A licença ainda não está declarada.
+O projeto é publicado sob a **licença MIT** (ver o ficheiro `LICENSE`). Os textos dos provérbios têm as fontes descritas na secção de fontes.
 
 ## Histórico / Changelog
 

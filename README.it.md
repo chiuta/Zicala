@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · **Italiano** · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versione:** 2.2.2 · **Ultimo aggiornamento:** 2026-11-08
+**Versione:** 2.2.3 · **Ultimo aggiornamento:** 2026-11-08
 
 Lingue dell'interfaccia: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -58,7 +58,7 @@ Scarica `index.html` e aprilo nel browser; non ha bisogno di server né di inter
 
 ## Licenza
 
-La licenza non è ancora dichiarata.
+Il progetto è pubblicato con **licenza MIT** (vedi il file `LICENSE`). I testi dei proverbi hanno le fonti descritte nella sezione delle fonti.
 
 ## Cronologia / Changelog
 
