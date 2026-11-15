@@ -10,7 +10,8 @@
     "Notification",
     "clipboard",
     "serviceWorker",
-    "localStorage"
+    "localStorage",
+    "WebGL"
   ],
   "storageKeys": [
     "lang",
@@ -22,13 +23,13 @@
     "zicala.zn",
     "zicala.zs"
   ],
-  "sizeBytes": 5459007,
-  "sha256": "afa68cf7b80263d57cfc6c54a390d2eed1618f399bfacb12410862ac514e1642",
+  "sizeBytes": 5511017,
+  "sha256": "128464d3155b8a903492e0ccb689a2bf29d5cd6e8a2f6fd2531f0ae9a06b7a83",
   "csp": {
     "present": true,
     "directives": {
       "default-src": "'none'",
-      "script-src": "sha256×3",
+      "script-src": "sha256×4",
       "style-src": "'unsafe-inline'",
       "img-src": "'self' data:",
       "base-uri": "'none'",
